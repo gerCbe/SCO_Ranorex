@@ -1,0 +1,403 @@
+﻿<repository
+id="52db32c6-ded9-4a79-9069-8edce4e61533"
+name="SCO_TestRepository">
+	<codegen
+	classname="SCO_TestRepository"
+	namespace="SCO_Test">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fc1d2383-1ec3-4156-b397-7cdcc4b2ac47"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2cae00d9-d291-4a14-ae96-fbce08b08210"
+		isrooted="True"
+		name="LaunchPadNet"
+		refimgid="69c003f7-79d8-4a29-b47f-1cdd7ecdb5c0"
+		refpath="/form[@title='LaunchPadNet']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/form[@title='LaunchPadNet']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAElSURBVDhPnZLLAcQgCEQtxVIoxVIsxVLSGTsP
+ITG7tz2M8hlGIGl+uRfsMm+rBeY1IzaWexvTm0238XALIbAw5i4MyCbfhuwh0RRoXWgz+C8BiF2F
+FYwYgsJJjniK3L7RotRfpOwEFxFbX3mJqKltR2uHQL2Miwh7id2oy5tz1LRo6RTQzJiIMNagWDb3
+w5neaQF7MoJmujK5g6Zi28UpUrlYuB6p3ewlSgAgVkTmjvlVTIijugHF28NiMEohZ+RfoJMoysX+
+fK3TAUtdfH86/OXPnk78CMz5ELEHS5W9NBI+wC5O7uCYKW1uCiOso1v6hx08jt41XxZwm+1Xd/UG
+RdXF68FISqBIJCHSepEqV9xTfAtkEtQOEEGsOgLFOUVC4H+4fwCu4dkTaPARlAAAAABJRU5ErkJg
+gg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="800862a7-99c5-4a63-843a-9dcbb720f387"
+		isrooted="True"
+		name="NCRNEXTGENUI"
+		refimgid="f1823361-a9a2-4f84-a263-3dae81386d1a"
+		refpath="/form[@title='NCR NEXTGENUI']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="88055d48-5532-449f-94b1-aa162538b526"
+			name="OKButton"
+			refimgid="a3143b3e-b98e-4335-93c9-ea3bd2a60a64"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/container/container[5]/button[@automationid='OK_Button']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='OK_Button']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@caption='']/container[@caption='']/container[5]/button[@automationid='OK_Button']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="19dc16a4-3c39-4b1a-8f00-279461e095cc"
+			name="SearchKeyInItemButton"
+			refimgid="0d71f377-1958-450f-8d5b-990ee543faa2"
+			refpath="/form[@title='NCR NEXTGENUI']/button[@automationid='InstructionBox']/container[@automationid='ScanItemStatus']/button[@automationid='SearchKeyInItemButton']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='SearchKeyInItemButton']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/button[@automationid='InstructionBox']/container[@automationid='ScanItemStatus']/button[@automationid='SearchKeyInItemButton']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="99524969-b4dd-4e14-a288-a3d00feb32f8"
+			name="pluItemBTN1"
+			refimgid="302efd08-73ee-4c40-a12b-00ad55efbdb8"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='SearchListGrid']/list[@automationid='SearchList']/container[2]/listitem[@index='0']"
+			robustPath="/form[@title='NCR NEXTGENUI']/?/?/list[@automationid='SearchList']/container[2]/listitem[@index='0']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='SearchListGrid']/list[@automationid='SearchList']/container[2]/listitem[@index='0']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="613a690f-6d20-4efe-97d5-1849e0b02378"
+			name="PayButton"
+			refimgid="10bea01c-9088-4434-8ce0-591cc79b552f"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/button[@automationid='PayButton']"
+			robustPath="/form[@title='NCR NEXTGENUI']/?/?/button[@automationid='PayButton']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/button[@automationid='PayButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="404c4172-cd81-4814-8250-dca59f8a1fac"
+			name="clubcardNoBtn"
+			refimgid="3f21f036-1d05-4745-b68a-a47610de3da7"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/container[2]/button[@automationid='List2Button']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='List2Button']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@caption='']/container[2]/button[@automationid='List2Button']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="b196f19d-7590-485f-b3d9-d55c00c2b3ab"
+			name="fakeCashBtn"
+			refimgid="216228cc-aadf-4b0a-a7c0-af5c5ec44ab6"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='MainPayment']/container[2]/button[@automationid='Tender4']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='Tender4']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='MainPayment']/container[2]/button[@automationid='Tender4']
+			</item>
+			<item
+			addcaps="picture,wpfelement,wpfgroupelement"
+			capname="picture"
+			id="16029742-84cf-460e-ab01-b0eeb7a982ba"
+			name="receiptImg"
+			refimgid="d9472ab2-b446-4c98-babc-b2fee5c8f72f"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/picture"
+			robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/picture"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@caption='']/picture
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="4f0a5bad-ed5e-4875-9072-7747a874bd9f"
+			name="TotalAmountValue"
+			refimgid="672211fd-1472-4922-9f34-333fadea4c61"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[2]/text[@automationid='TotalAmountValue']"
+			robustPath="/form[@title='NCR NEXTGENUI']//text[@automationid='TotalAmountValue']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[2]/text[@automationid='TotalAmountValue']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="5d108e9d-9110-4b75-b4d4-7ad2beb34f74"
+			name="PayAmountValue"
+			refimgid="4d77bb5f-1dcd-454e-96bd-f09994c46063"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/button[@automationid='PayButton']/text[@automationid='PayTitleText']/text[@automationid='PayAmountValue']"
+			robustPath="/form[@title='NCR NEXTGENUI']//text[@automationid='PayAmountValue']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/button[@automationid='PayButton']/text[@automationid='PayTitleText']/text[@automationid='PayAmountValue']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="acc665b4-3c02-46e7-b021-4553ad6e0bb9"
+			name="AmountPaid"
+			refimgid="ae639bcf-b524-47a0-a93f-ec744a382bac"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/container[@caption='']/container[2]/text[@automationid='AmountPaid']"
+			robustPath="/form[@title='NCR NEXTGENUI']//text[@automationid='AmountPaid']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@caption='']/container[@caption='']/container[2]/text[@automationid='AmountPaid']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="30a4c094-f538-43c1-bf76-8bd96e86cc40"
+			name="keypad1"
+			refimgid="f8a60670-8c62-42c5-bd14-cf3f57ffd47b"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='1']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@name='LineKeys' and @text='1']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@name='LineKeys' and @text='1']
+			</item>
+			<folder
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="649a6613-214f-44cd-a0b1-aef1d9fbffcc"
+			isrooted="True"
+			name="SomeContainer"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="714d8fe9-97f4-4ba0-96cb-0734d37394bc"
+				name="keypad2"
+				refimgid="295ea7d4-559e-4972-a9d2-6cbc5da0b22e"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='2']"
+				robustPath="/form[@title='NCR NEXTGENUI']//button[@name='LineKeys' and @text='2']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@name='LineKeys' and @text='2']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="a4cf8823-8454-4f2e-a39d-621894350989"
+				name="keypad3"
+				refimgid="f5f9e52f-f7ce-4aa4-be78-1c30d6981f9b"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='3']"
+				robustPath="/form[@title='NCR NEXTGENUI']//button[@name='LineKeys' and @text='3']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine1Keys']/button[@name='LineKeys' and @text='3']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="8563c268-2991-4464-8af1-d8c7206e6d6f"
+				name="keypad4"
+				refimgid="62bbe6a8-2ca3-4528-bd5b-595bf78b778c"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='4']"
+				robustPath="/form[@title='NCR NEXTGENUI']//button[@name='LineKeys' and @text='4']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@name='LineKeys' and @text='4']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="1ec46429-65e9-46a3-91f4-96b58db4a37d"
+				name="keypad5"
+				refimgid="303c4b34-5ef1-4493-bf21-e14d3b2b6b4d"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='5']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='5']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@name='LineKeys' and @text='5']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="f654682e-3c9c-4a5b-b6fa-7a2ccbb6f2e1"
+				name="keypad6"
+				refimgid="2163ab39-e854-4ccb-a07b-8f332db67e6d"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='6']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='6']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine2Keys']/button[@name='LineKeys' and @text='6']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="1bac706b-38f2-418e-bbcb-5647fb7941d2"
+				name="keypad7"
+				refimgid="7bb65d3c-1871-419e-b86c-6ce9701f497c"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='7']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='7']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@name='LineKeys' and @text='7']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="4a1c3710-9089-4b9d-bf88-65aae847d1bb"
+				name="keypad8"
+				refimgid="4f269b11-123e-4afd-9991-3255907620ec"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='8']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='8']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@name='LineKeys' and @text='8']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="43db0f4b-1895-47c1-98ef-14a9fda4a0f1"
+				name="keypad9"
+				refimgid="18d2b0d2-9c07-4e50-8f35-d592a7db0d9a"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@automationid='LineKeys' and @name='LineKeys' and @text='9']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='9']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine3Keys']/button[@name='LineKeys' and @text='9']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="a5d7d031-563e-46b9-8b9a-7f3754be86d4"
+				name="keypad0"
+				refimgid="b9d7eecb-1c37-4ca5-98ca-325086401aeb"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine4Keys']/button[@automationid='LineKeys']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@name='LineKeys' and @text='0']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']/list[@automationid='NumericLine4Keys']/button[@automationid='LineKeys']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="2ce707c9-ad62-45f6-bc94-ebad5981a8b2"
+				name="EnterButton"
+				refimgid="ebbbe8b0-96f2-4f47-8dce-dc2ad2c294eb"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/?/button[@automationid='EnterButton']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="8ff6dc1d-3ab5-4b26-9826-dc47dd9facab"
+				name="StoreLogIn"
+				refimgid="441f9b25-6c79-4cd9-ba25-d08f5c96f0ff"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/container[@caption='']/container[6]/button[@automationid='StoreLogin']/text[@caption='Store Log In']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='StoreLogin']/text[@caption='Store Log In']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/container[@caption='']/container[6]/button[@automationid='StoreLogin']/text[@caption='Store Log In']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="c10db81a-bf65-47d5-8dd0-c745900ef3d1"
+				name="storeLoginKeypad9"
+				refimgid="eb6c89d1-f06f-4d31-b931-117cc9be87e5"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/text[@automationid='InputTextBox']/container[@automationid='KeypadGrid']/container[@automationid='thirdRow']/button[@automationid='Keypad9']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='Keypad9']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/text[@automationid='InputTextBox']/container[@automationid='KeypadGrid']/container[@automationid='thirdRow']/button[@automationid='Keypad9']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="e3335353-da32-4362-b552-d4f1c61ebcb1"
+				name="storeLoginOkBtn"
+				refimgid="d7b77928-44f9-492a-90a7-48324cbd16d2"
+				refpath="/form[@title='NCR NEXTGENUI']/container[@caption='']/text[@automationid='InputTextBox']/container[@automationid='KeypadGrid']/container[@automationid='lastRow']/button[@automationid='OKButton']"
+				robustPath="/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='OKButton']"
+				searchtimeout="30000ms">
+					/form[@title='NCR NEXTGENUI']/container[@caption='']/text[@automationid='InputTextBox']/container[@automationid='KeypadGrid']/container[@automationid='lastRow']/button[@automationid='OKButton']
+				</item>
+				<basepath>
+					/form[@title='NCR NEXTGENUI']/container[@caption='']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="3a88c3c7-8168-49b0-adba-eae6794ec041"
+			name="EditCartBtn"
+			refimgid="5469ec9c-ed54-4023-b5a1-227a26702365"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[1]/button[@automationid='EditCartBtn']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='EditCartBtn']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[1]/button[@automationid='EditCartBtn']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="8b684d39-a138-46aa-b9d5-18b92ebfeba1"
+			name="CancelAllBtn"
+			refimgid="4d203a5d-812f-4998-844d-224e141a19dd"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[1]/button[@automationid='CancelAllBtn']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='CancelAllBtn']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[1]/button[@automationid='CancelAllBtn']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="5fe00bb6-1881-4a42-a16e-5bf8c529b824"
+			name="yesEmptyCartBtn"
+			refimgid="6816cb6e-c37c-47af-84cc-3f88dfb42d2a"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='ConfirmAbortPanel']/container[2]/button[@automationid='YesButton']"
+			robustPath="/form[@title='NCR NEXTGENUI']//button[@automationid='YesButton']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='ConfirmAbortPanel']/container[2]/button[@automationid='YesButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="9b862be0-faf8-416c-ae0e-b9da3d0ac545"
+			name="yesCancelAllItemsBtn"
+			refimgid="c73bf13b-8ace-4c90-83eb-70d5ad6e1362"
+			refpath="/form[@title='NCR NEXTGENUI']/list[@automationid='ContainerStoreModeButtonsItemsControl']/button[@automationid='StoreButton1']"
+			robustPath="/form[@title='NCR NEXTGENUI']/?/?/button[@automationid='StoreButton1']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/list[@automationid='ContainerStoreModeButtonsItemsControl']/button[@automationid='StoreButton1']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="b3d74d39-3281-41e7-be2d-53a1256bf535"
+			name="ScanItemSearchKeyInItem"
+			refimgid="d8c78247-b494-4751-a8af-cb366051aa32"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='ScanItemStatus']/button[@automationid='ScanItemSearchKeyInItem']"
+			robustPath="/form[@title='NCR NEXTGENUI']/?/?/button[@automationid='ScanItemSearchKeyInItem']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='ScanItemStatus']/button[@automationid='ScanItemSearchKeyInItem']
+			</item>
+			<basepath>
+				/form[@title='NCR NEXTGENUI']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEcSURBVDhPnZLRDcMgDEQZhVEYhVEYhVGyGb1n
+cymton70JJfkwA/baVkPuvZ6aj6Z0g1gv8ySMRS9pDfaKm1klIzrgAUgDiqBxHGNNZcO4QEKT2cU
+Y8rbIEMCEKZuOuVKDD9lSDzbgG7FzQK4ijZbhOcwlFvqBmAC8GalZ98sSCRf6fWZSXO3EmcwKKfn
+XiigSqgCdJL3ajWBAKAAVHpSSed0GWZXxM1HMgPOtg4A8ieCXLveVVLp2TuVEPcn1mq9nyQPJ2LP
+JfrcSQSVnfoA/KMAdJVqDZUx1R/zKEWlN92sFZ3vnAuPn9Y0aZnxb9sAJ1nscc66ofx4wzf8ArBP
+WPGEwbAQ7QBgNYyqADix1qwWfV7zIM/jW+mt9QKwh/Xm8sFgNAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="0e5672c7-c258-49a0-a917-13cbdcf9e69c"
+		name="KeypadList">
+		</var>
+	</variables>
+</repository>

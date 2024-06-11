@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SCO_Test"
+      id="e93bda8d-3479-4260-abaa-0fccc3685d41"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SCO_Test"
+      id="e93bda8d-3479-4260-abaa-0fccc3685d41"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
