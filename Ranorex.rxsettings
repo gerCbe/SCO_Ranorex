@@ -415,7 +415,7 @@ rxversion="11.0">
 		PreferExcel
 	</Testing.Data.ExcelDataLoadingPreference>
 	<TestExecution.CopyRuntimeToOutput>
-		False
+		True
 	</TestExecution.CopyRuntimeToOutput>
 	<vbcodegenconfig.generate.root.namespace>
 		True

@@ -1,5 +1,7 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="CodeModules\MainTestModule.cs" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="CodeModules\MainTestModule.cs" />
