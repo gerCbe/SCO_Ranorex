@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="53.06s"
+		durationms="53061"
+		type="root"
+		rid="2daeea7f429fad0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SCOT"
+		rxversion="11.1.2.0"
+		host="CN46SCO51"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-IE"
+		screenresolution="2944x1080"
+		timestamp="05/06/2024 12:18:36"
+		timestampiso="2024-06-05T11:18:36"
+		endtime="05/06/2024 12:19:29"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="45.1s"
+			durationms="45104"
+			type="test-suite"
+			rid="7619ffcef129257"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="SCO_Test"
+			headertext="SCO_Test"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Failed"
+				duration="44.98s"
+				durationms="44976"
+				type="test-case"
+				rid="93376c44bfba238"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TestCase"
+				testcontainerid="af3318e9-cf50-468a-94ce-f2f79750e406"
+				headertext="TestCase"
+				displayName="TestCase"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="44.9s"
+					durationms="44897"
+					type="test-module"
+					rid="61ca4b37e9b4978"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="MainTestModule"
+					displayName="MainTestModule"
+					moduleid="3a1ecf46-8e59-4066-934d-20ca4b887da0"
+					moduletype="UserCode"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Objects are not equal (actual='€1.90', expected='€0.00').
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.253"
+						timeRelativeToTestModuleStartTime="00:05.096"
+						timeWallClock="12:18:49"
+						time="00:05.253"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:SearchKeyInItemButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="191"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.401"
+						timeRelativeToTestModuleStartTime="00:05.244"
+						timeWallClock="12:18:49"
+						time="00:05.401"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:SearchKeyInItemButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="203"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.955"
+						timeRelativeToTestModuleStartTime="00:06.797"
+						timeWallClock="12:18:50"
+						time="00:06.955"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/button[@automationid='InstructionBox']/container[@automationid='ScanItemStatus']/button[@automationid='SearchKeyInItemButton']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="54"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.410"
+						timeRelativeToTestModuleStartTime="00:23.253"
+						timeWallClock="12:19:07"
+						time="00:23.410"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@caption='']/button[@automationid='EnterButton']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="134"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:25.439"
+						timeRelativeToTestModuleStartTime="00:25.282"
+						timeWallClock="12:19:09"
+						time="00:25.439"
+						level="Success"
+						category="Validation">
+						<message>
+							Objects are equal (actual='€0.00', expected='€0.00').
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="73"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:26.377"
+						timeRelativeToTestModuleStartTime="00:26.220"
+						timeWallClock="12:19:10"
+						time="00:26.377"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:PayButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="191"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:26.853"
+						timeRelativeToTestModuleStartTime="00:26.696"
+						timeWallClock="12:19:10"
+						time="00:26.853"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:PayButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="203"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:33.681"
+						timeRelativeToTestModuleStartTime="00:33.524"
+						timeWallClock="12:19:17"
+						time="00:33.681"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:List2Button}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="191"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:33.773"
+						timeRelativeToTestModuleStartTime="00:33.616"
+						timeWallClock="12:19:17"
+						time="00:33.773"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:List2Button}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="203"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.269"
+						timeRelativeToTestModuleStartTime="00:35.111"
+						timeWallClock="12:19:19"
+						time="00:35.269"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:Tender4}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="191"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.415"
+						timeRelativeToTestModuleStartTime="00:35.258"
+						timeWallClock="12:19:19"
+						time="00:35.415"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:Tender4}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="203"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.730"
+						timeRelativeToTestModuleStartTime="00:36.573"
+						timeWallClock="12:19:20"
+						time="00:36.730"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@automationid='MainPayment']/container[2]/button[@automationid='Tender4']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="90"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.674"
+						timeRelativeToTestModuleStartTime="00:44.517"
+						timeWallClock="12:19:28"
+						time="00:44.674"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Text:AmountPaid}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="191"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.794"
+						timeRelativeToTestModuleStartTime="00:44.637"
+						timeWallClock="12:19:28"
+						time="00:44.794"
+						level="Info"
+						category="User"
+						errimg="images_SCO_Test_62920595\SCO_Test_62920595_cd6ee1fe_trace.jpg"
+						errthumb="images_SCO_Test_62920595\SCO_Test_62920595_cd6ee1fe_trace_thumb.jpg">
+						<message>
+							Finished waiting for {Text:AmountPaid}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="203"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.881"
+						timeRelativeToTestModuleStartTime="00:44.724"
+						timeWallClock="12:19:28"
+						time="00:44.881"
+						level="Failure"
+						category="Validation"
+						errimg="images_SCO_Test_62920595\SCO_Test_62920595_08eddb17_trace.jpg"
+						errthumb="images_SCO_Test_62920595\SCO_Test_62920595_08eddb17_trace_thumb.jpg">
+						<message>
+							Objects are not equal (actual='€1.90', expected='€0.00').
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="97"
+							loglvl="Failure">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.933"
+						timeRelativeToTestModuleStartTime="00:44.776"
+						timeWallClock="12:19:28"
+						time="00:44.933"
+						level="Error"
+						category="Module"
+						errimg="images_SCO_Test_62920595\SCO_Test_62920595_7874d8bb_trace.jpg"
+						errthumb="images_SCO_Test_62920595\SCO_Test_62920595_7874d8bb_trace_thumb.jpg">
+						<message>
+							Module execution was aborted because a validation step has failed. Objects are not equal (actual='€1.90', expected='€0.00').
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   at Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Options options)
+   at Ranorex.Validate.AreEqual(Object actual, Object expected)
+   at SCO_Test.CodeModules.genCode.verifyAmountPaid(String total) in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs:line 97
+   at SCO_Test.CodeModules.MainTestModule.enterPluTransaction() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 89
+   at SCO_Test.CodeModules.MainTestModule.Ranorex.Core.Testing.ITestModule.Run() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 55
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="97"
+							loglvl="Error">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

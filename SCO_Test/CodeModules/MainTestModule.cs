@@ -49,8 +49,10 @@ namespace SCO_Test.CodeModules
             Delay.SpeedFactor = 1.0;
           
            	
+            
+            
              basicOrder();
-             //enterPluTransaction();
+             enterPluTransaction();
                
         	//cancelTransaction();
         	
@@ -63,6 +65,9 @@ namespace SCO_Test.CodeModules
         	 
         	genC.clickItemBtn(0);
         
+       		List<Ranorex.Text> itemPrices = genC.getRecieptPrices();
+       		
+       		genC.compareReceiptSum(itemPrices);
         	string total = genC.verifyTotal();
         	 
         	genC.clickPayBtn();
@@ -80,7 +85,9 @@ namespace SCO_Test.CodeModules
         	 genC.clickSearchItem();
         	 
         	 genC.clickKeyPadNum("0000054491472");
-        	 
+        	 List<Ranorex.Text> itemPrices = genC.getRecieptPrices();
+       		
+       		 genC.compareReceiptSum(itemPrices);
         	 string total = genC.verifyTotal();
         	 
         	 genC.clickPayBtn();

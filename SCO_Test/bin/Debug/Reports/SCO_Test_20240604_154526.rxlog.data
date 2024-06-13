@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="22.19s"
+		durationms="22193"
+		type="root"
+		rid="3ed4dc7f63feb0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SCOT"
+		rxversion="11.1.2.0"
+		host="CN46SCO51"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-IE"
+		screenresolution="2944x1080"
+		timestamp="04/06/2024 15:45:26"
+		timestampiso="2024-06-04T14:45:26"
+		endtime="04/06/2024 15:45:48"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="13.5s"
+			durationms="13495"
+			type="test-suite"
+			rid="34b29471efdc7150"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="SCO_Test"
+			headertext="SCO_Test"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Failed"
+				duration="13.24s"
+				durationms="13235"
+				type="test-case"
+				rid="10be023454a938be"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TestCase"
+				testcontainerid="af3318e9-cf50-468a-94ce-f2f79750e406"
+				headertext="TestCase"
+				displayName="TestCase"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="13.04s"
+					durationms="13036"
+					type="test-module"
+					rid="af0051edbc22f14"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="MainTestModule"
+					displayName="MainTestModule"
+					moduleid="3a1ecf46-8e59-4066-934d-20ca4b887da0"
+					moduletype="UserCode"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Element is not visible in the UI and thus click can't be perfomed.
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.870"
+						timeRelativeToTestModuleStartTime="00:05.738"
+						timeWallClock="15:45:41"
+						time="00:05.870"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/button[@automationid='InstructionBox']/container[@automationid='ScanItemStatus']/button[@automationid='SearchKeyInItemButton']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="53"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.683"
+						timeRelativeToTestModuleStartTime="00:09.552"
+						timeWallClock="15:45:44"
+						time="00:09.683"
+						level="Success"
+						category="Validation"
+						errimg="images_SCO_Test_101e915e\SCO_Test_101e915e_fb265c2c_trace.jpg"
+						errthumb="images_SCO_Test_101e915e\SCO_Test_101e915e_fb265c2c_trace_thumb.jpg">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@automationid='SearchListGrid']/list[@automationid='SearchList']/container[2]/listitem[@index='0']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="59"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.861"
+						timeRelativeToTestModuleStartTime="00:12.730"
+						timeWallClock="15:45:48"
+						time="00:12.861"
+						level="Success"
+						category="Validation"
+						errimg="images_SCO_Test_101e915e\SCO_Test_101e915e_24ff45bc_trace.jpg"
+						errthumb="images_SCO_Test_101e915e\SCO_Test_101e915e_24ff45bc_trace_thumb.jpg">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/container[1]/button[@automationid='EditCartBtn']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="136"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.961"
+						timeRelativeToTestModuleStartTime="00:12.830"
+						timeWallClock="15:45:48"
+						time="00:12.961"
+						level="Error"
+						category="Module"
+						errimg="images_SCO_Test_101e915e\SCO_Test_101e915e_dfb453b5_trace.jpg"
+						errthumb="images_SCO_Test_101e915e\SCO_Test_101e915e_dfb453b5_trace_thumb.jpg">
+						<message>
+							Element is not visible in the UI and thus click can't be perfomed.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Adapter.Click(MouseButtons buttons, Location location, Int32 times, Duration moveTime, Boolean showOutOfBoundsWarning)
+   at Ranorex.Adapter.Click()
+   at SCO_Test.CodeModules.genCode.clickEditBasket() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs:line 138
+   at SCO_Test.CodeModules.MainTestModule.cancelTransaction() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 96
+   at SCO_Test.CodeModules.MainTestModule.Ranorex.Core.Testing.ITestModule.Run() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 57
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="138"
+							loglvl="Error">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

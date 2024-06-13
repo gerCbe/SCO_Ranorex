@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="44.34s"
+		durationms="44344"
+		type="root"
+		rid="d5f25b7aa3e4d53"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="1"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="1"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SCOT"
+		rxversion="11.1.2.0"
+		host="CN46SCO51"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-IE"
+		screenresolution="2944x1080"
+		timestamp="05/06/2024 12:07:05"
+		timestampiso="2024-06-05T11:07:05"
+		endtime="05/06/2024 12:07:50"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="30.17s"
+			durationms="30169"
+			type="test-suite"
+			rid="ed17897fe604b1c"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="1"
+			totalfailedtestcasecount="0"
+			totalblockedtestcasecount="0"
+			childsuccesscount="1"
+			childfailedcount="0"
+			childblockedcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="SCO_Test"
+			headertext="SCO_Test"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Success"
+				duration="30.06s"
+				durationms="30059"
+				type="test-case"
+				rid="20679673e4c79090"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="1"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				childsuccesscount="1"
+				childfailedcount="0"
+				childblockedcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TestCase"
+				testcontainerid="af3318e9-cf50-468a-94ce-f2f79750e406"
+				headertext="TestCase"
+				displayName="TestCase"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="30s"
+					durationms="30003"
+					type="test-module"
+					rid="19276de86540b40"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="MainTestModule"
+					displayName="MainTestModule"
+					moduleid="3a1ecf46-8e59-4066-934d-20ca4b887da0"
+					moduletype="UserCode"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:04.966"
+						timeRelativeToTestModuleStartTime="00:04.861"
+						timeWallClock="12:07:25"
+						time="00:04.966"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:SearchKeyInItemButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.106"
+						timeRelativeToTestModuleStartTime="00:05.001"
+						timeWallClock="12:07:25"
+						time="00:05.106"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:SearchKeyInItemButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.566"
+						timeRelativeToTestModuleStartTime="00:06.461"
+						timeWallClock="12:07:26"
+						time="00:06.566"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/button[@automationid='InstructionBox']/container[@automationid='ScanItemStatus']/button[@automationid='SearchKeyInItemButton']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="54"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.773"
+						timeRelativeToTestModuleStartTime="00:08.669"
+						timeWallClock="12:07:28"
+						time="00:08.773"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {ListItem:}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.894"
+						timeRelativeToTestModuleStartTime="00:08.789"
+						timeWallClock="12:07:28"
+						time="00:08.894"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {ListItem:}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.356"
+						timeRelativeToTestModuleStartTime="00:10.251"
+						timeWallClock="12:07:30"
+						time="00:10.356"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@automationid='SearchListGrid']/list[@automationid='SearchList']/container[2]/listitem[@index='0']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="62"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.603"
+						timeRelativeToTestModuleStartTime="00:13.498"
+						timeWallClock="12:07:33"
+						time="00:13.603"
+						level="Success"
+						category="Validation">
+						<message>
+							Objects are equal (actual='€1.90', expected='€1.90').
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="73"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.884"
+						timeRelativeToTestModuleStartTime="00:14.779"
+						timeWallClock="12:07:34"
+						time="00:14.884"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:PayButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.021"
+						timeRelativeToTestModuleStartTime="00:14.916"
+						timeWallClock="12:07:35"
+						time="00:15.021"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:PayButton}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.337"
+						timeRelativeToTestModuleStartTime="00:20.232"
+						timeWallClock="12:07:40"
+						time="00:20.337"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:List2Button}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.433"
+						timeRelativeToTestModuleStartTime="00:20.328"
+						timeWallClock="12:07:40"
+						time="00:20.433"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:List2Button}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.922"
+						timeRelativeToTestModuleStartTime="00:21.817"
+						timeWallClock="12:07:41"
+						time="00:21.922"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Button:Tender4}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.015"
+						timeRelativeToTestModuleStartTime="00:21.910"
+						timeWallClock="12:07:42"
+						time="00:22.015"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Button:Tender4}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.490"
+						timeRelativeToTestModuleStartTime="00:23.386"
+						timeWallClock="12:07:43"
+						time="00:23.490"
+						level="Success"
+						category="Validation">
+						<message>
+							Element for path '/form[@title='NCR NEXTGENUI']/container[@automationid='MainPayment']/container[2]/button[@automationid='Tender4']' does exist.
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="91"
+							loglvl="Success">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:29.925"
+						timeRelativeToTestModuleStartTime="00:29.820"
+						timeWallClock="12:07:49"
+						time="00:29.925"
+						level="Info"
+						category="User">
+						<message>
+							Waiting for {Text:AmountPaid}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="192"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:29.993"
+						timeRelativeToTestModuleStartTime="00:29.888"
+						timeWallClock="12:07:50"
+						time="00:29.993"
+						level="Info"
+						category="User">
+						<message>
+							Finished waiting for {Text:AmountPaid}
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="204"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.049"
+						timeRelativeToTestModuleStartTime="00:29.944"
+						timeWallClock="12:07:50"
+						time="00:30.049"
+						level="Success"
+						category="Validation">
+						<message>
+							Objects are equal (actual='€1.90', expected='€1.90').
+						</message>
+						<metainfo
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\genCode.cs"
+							codeline="98"
+							loglvl="Success">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

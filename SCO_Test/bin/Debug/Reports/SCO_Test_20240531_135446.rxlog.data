@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="24.43s"
+		durationms="24431"
+		type="root"
+		rid="1c6a8d44d1996982"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="SCOT"
+		rxversion="11.1.2.0"
+		host="CN46SCO51"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-IE"
+		screenresolution="2944x1080"
+		timestamp="31/05/2024 13:54:46"
+		timestampiso="2024-05-31T12:54:46"
+		endtime="31/05/2024 13:55:11"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="11.56s"
+			durationms="11564"
+			type="test-suite"
+			rid="a85994f3680fd42"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="SCO_Test"
+			headertext="SCO_Test"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Failed"
+				duration="11.44s"
+				durationms="11441"
+				type="test-case"
+				rid="8f7ca667fb59b60"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TestCase"
+				testcontainerid="af3318e9-cf50-468a-94ce-f2f79750e406"
+				headertext="TestCase"
+				displayName="TestCase"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="11.4s"
+					durationms="11396"
+					type="test-module"
+					rid="1ddd9a0aa0f9934"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="MainTestModule"
+					displayName="MainTestModule"
+					moduleid="3a1ecf46-8e59-4066-934d-20ca4b887da0"
+					moduletype="UserCode"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						No element found for path '/form[@title='NCR NEXTGENUI']//button[@automationid='SearchKeyInItemButton']' at step '' after 1 attempts within 10s.
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.288"
+						timeRelativeToTestModuleStartTime="00:11.147"
+						timeWallClock="13:55:10"
+						time="00:11.288"
+						level="Error"
+						category="Module"
+						errimg="images_SCO_Test_234e33a3\SCO_Test_234e33a3_c4d38b9a_trace.jpg"
+						errthumb="images_SCO_Test_234e33a3\SCO_Test_234e33a3_c4d38b9a_trace_thumb.jpg">
+						<message>
+							No element found for path '/form[@title='NCR NEXTGENUI']//button[@automationid='SearchKeyInItemButton']' at step '' after 1 attempts within 10s.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Core.Element.FindSingle(RxPath path, Duration timeout)
+   at Ranorex.Core.Element.FromPath(String path)
+   at Ranorex.Button.op_Implicit(String path)
+   at SCO_Test.CodeModules.MainTestModule.basicOrder() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 55
+   at SCO_Test.CodeModules.MainTestModule.Ranorex.Core.Testing.ITestModule.Run() in C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs:line 49
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\SCOT\Documents\Ranorex\RanorexStudio Projects\SCO_Test\SCO_Test\CodeModules\MainTestModule.cs"
+							codeline="55"
+							loglvl="Error">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SCO_Test</name>
+    </assembly>
+    <members>
+        <member name="T:SCO_Test.CloseAUT">
+             <summary>
+            The CloseAUT recording.
+             </summary>
+        </member>
+        <member name="F:SCO_Test.CloseAUT.repo">
+            <summary>
+            Holds an instance of the SCO_TestRepository repository.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CloseAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.CloseAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.CloseAUT.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CloseAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:SCO_Test.CloseAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CloseAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:SCO_Test.CloseAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.CodeModules.genCode">
+            <summary>
+            Description of genCode.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CodeModules.genCode.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CodeModules.genCode.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:SCO_Test.CodeModules.MainTestModule">
+            <summary>
+            Description of MainTestModule.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CodeModules.MainTestModule.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.CodeModules.MainTestModule.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:SCO_Test.SCO_TestRepository">
+            <summary>
+            The class representing the SCO_TestRepository element repository.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the SCO_TestRepository element repository.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.SCO_TestRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepository.KeypadList">
+            <summary>
+            Gets or sets the value of variable KeypadList.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepository.LaunchPadNet">
+            <summary>
+            The LaunchPadNet folder.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepository.NCRNEXTGENUI">
+            <summary>
+            The NCRNEXTGENUI folder.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.SCO_TestRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.SCO_TestRepositoryFolders.LaunchPadNetAppFolder">
+            <summary>
+            The LaunchPadNetAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.SCO_TestRepositoryFolders.LaunchPadNetAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new LaunchPadNet  folder.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.LaunchPadNetAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.LaunchPadNetAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder">
+            <summary>
+            The NCRNEXTGENUIAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NCRNEXTGENUI  folder.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.OKButton">
+            <summary>
+            The OKButton item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.OKButtonInfo">
+            <summary>
+            The OKButton item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.SearchKeyInItemButton">
+            <summary>
+            The SearchKeyInItemButton item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.SearchKeyInItemButtonInfo">
+            <summary>
+            The SearchKeyInItemButton item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.pluItemBTN1">
+            <summary>
+            The pluItemBTN1 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.pluItemBTN1Info">
+            <summary>
+            The pluItemBTN1 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.PayButton">
+            <summary>
+            The PayButton item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.PayButtonInfo">
+            <summary>
+            The PayButton item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.clubcardNoBtn">
+            <summary>
+            The clubcardNoBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.clubcardNoBtnInfo">
+            <summary>
+            The clubcardNoBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.fakeCashBtn">
+            <summary>
+            The fakeCashBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.fakeCashBtnInfo">
+            <summary>
+            The fakeCashBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.receiptImg">
+            <summary>
+            The receiptImg item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.receiptImgInfo">
+            <summary>
+            The receiptImg item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.TotalAmountValue">
+            <summary>
+            The TotalAmountValue item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.TotalAmountValueInfo">
+            <summary>
+            The TotalAmountValue item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.PayAmountValue">
+            <summary>
+            The PayAmountValue item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.PayAmountValueInfo">
+            <summary>
+            The PayAmountValue item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.AmountPaid">
+            <summary>
+            The AmountPaid item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.AmountPaidInfo">
+            <summary>
+            The AmountPaid item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.keypad1">
+            <summary>
+            The keypad1 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.keypad1Info">
+            <summary>
+            The keypad1 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.EditCartBtn">
+            <summary>
+            The EditCartBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.EditCartBtnInfo">
+            <summary>
+            The EditCartBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.CancelAllBtn">
+            <summary>
+            The CancelAllBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.CancelAllBtnInfo">
+            <summary>
+            The CancelAllBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.yesEmptyCartBtn">
+            <summary>
+            The yesEmptyCartBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.yesEmptyCartBtnInfo">
+            <summary>
+            The yesEmptyCartBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.yesCancelAllItemsBtn">
+            <summary>
+            The yesCancelAllItemsBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.yesCancelAllItemsBtnInfo">
+            <summary>
+            The yesCancelAllItemsBtn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.ScanItemSearchKeyInItem">
+            <summary>
+            The ScanItemSearchKeyInItem item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.ScanItemSearchKeyInItemInfo">
+            <summary>
+            The ScanItemSearchKeyInItem item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.CartReceipt">
+            <summary>
+            The CartReceipt item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.CartReceiptInfo">
+            <summary>
+            The CartReceipt item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.NCRNEXTGENUIAppFolder.SomeContainer">
+            <summary>
+            The SomeContainer folder.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder">
+            <summary>
+            The SomeContainerFolder folder.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SomeContainer  folder.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad2">
+            <summary>
+            The keypad2 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad2Info">
+            <summary>
+            The keypad2 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad3">
+            <summary>
+            The keypad3 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad3Info">
+            <summary>
+            The keypad3 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad4">
+            <summary>
+            The keypad4 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad4Info">
+            <summary>
+            The keypad4 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad5">
+            <summary>
+            The keypad5 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad5Info">
+            <summary>
+            The keypad5 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad6">
+            <summary>
+            The keypad6 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad6Info">
+            <summary>
+            The keypad6 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad7">
+            <summary>
+            The keypad7 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad7Info">
+            <summary>
+            The keypad7 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad8">
+            <summary>
+            The keypad8 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad8Info">
+            <summary>
+            The keypad8 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad9">
+            <summary>
+            The keypad9 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad9Info">
+            <summary>
+            The keypad9 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad0">
+            <summary>
+            The keypad0 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.keypad0Info">
+            <summary>
+            The keypad0 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.EnterButton">
+            <summary>
+            The EnterButton item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.EnterButtonInfo">
+            <summary>
+            The EnterButton item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.StoreLogIn">
+            <summary>
+            The StoreLogIn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.StoreLogInInfo">
+            <summary>
+            The StoreLogIn item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.storeLoginKeypad9">
+            <summary>
+            The storeLoginKeypad9 item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.storeLoginKeypad9Info">
+            <summary>
+            The storeLoginKeypad9 item info.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.storeLoginOkBtn">
+            <summary>
+            The storeLoginOkBtn item.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.SCO_TestRepositoryFolders.SomeContainerFolder.storeLoginOkBtnInfo">
+            <summary>
+            The storeLoginOkBtn item info.
+            </summary>
+        </member>
+        <member name="T:SCO_Test.StartAUT">
+             <summary>
+            The StartAUT recording.
+             </summary>
+        </member>
+        <member name="F:SCO_Test.StartAUT.repo">
+            <summary>
+            Holds an instance of the SCO_TestRepository repository.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.StartAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.StartAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:SCO_Test.StartAUT.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.StartAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:SCO_Test.StartAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:SCO_Test.StartAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:SCO_Test.StartAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

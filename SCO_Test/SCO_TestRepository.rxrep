@@ -378,6 +378,17 @@ gg==
 			searchtimeout="30000ms">
 				/form[@title='NCR NEXTGENUI']/container[@automationid='ScanItemStatus']/button[@automationid='ScanItemSearchKeyInItem']
 			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="de5aaa04-99f8-4f5e-ba77-61a0de9640b4"
+			name="CartReceipt"
+			refimgid="162ddb65-a2bd-4f7d-949f-8b03229c05cc"
+			refpath="/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/list[@automationid='CartReceipt']"
+			robustPath="/form[@title='NCR NEXTGENUI']/?/?/list[@automationid='CartReceipt']"
+			searchtimeout="30000ms">
+				/form[@title='NCR NEXTGENUI']/container[@automationid='CartControl']/list[@automationid='CartReceipt']
+			</item>
 			<basepath>
 				/form[@title='NCR NEXTGENUI']
 			</basepath>

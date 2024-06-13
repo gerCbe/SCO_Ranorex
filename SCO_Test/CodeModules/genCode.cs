@@ -27,6 +27,7 @@ namespace SCO_Test.CodeModules
     [TestModule("81C6E623-9230-4952-9F19-9F2C2626635F", ModuleType.UserCode, 1)]
     public class genCode : ITestModule
     {
+    	SCO_TestRepository repo1 = SCO_TestRepository.Instance;
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -48,6 +49,33 @@ namespace SCO_Test.CodeModules
             Delay.SpeedFactor = 1.0;
         }
         
+        public List<Ranorex.Text> getRecieptPrices(){
+        	
+        	var cartReceipt = repo1.NCRNEXTGENUI.CartReceipt;
+			var cartReceiptInfo = repo1.NCRNEXTGENUI.CartReceiptInfo;
+			cartReceiptInfo.WaitForAttributeEqual(cartReceiptInfo.SearchTimeout,"Visible", "True");
+        	IList<Ranorex.Text> ListItems = cartReceipt.FindDescendants<Ranorex.Text>();
+        	
+        	List<Ranorex.Text> itemPrices = new List<Ranorex.Text>();
+        	
+        	foreach (var element in ListItems) {
+        		if (element.GetAttributeValue<string>("AutomationId") == "ItemPrice" && element.SelectionText != "") {
+        			itemPrices.Add(element);
+        		}
+        	}
+        	  	return itemPrices;
+        }
+        
+        public void compareReceiptSum(List<Ranorex.Text> prices){
+        	List<float> itemPrices = new List<float>();
+        	float sum = 0;
+        	foreach (var price in prices) {
+			sum += float.Parse(price.SelectionText.Substring(1));
+        	}
+        	
+        	Validate.AreEqual(sum,float.Parse(repo1.NCRNEXTGENUI.TotalAmountValue.TextValue.Substring(1))); 
+        }
+        
         public void clickSearchItem(){
     		 
         	var repo = SCO_TestRepository.Instance;
@@ -65,12 +93,12 @@ namespace SCO_Test.CodeModules
         	var repo = SCO_TestRepository.Instance;
         	var pluItemBTN1 = repo.NCRNEXTGENUI.pluItemBTN1;
         	var pluItemBtn1Info = repo.NCRNEXTGENUI.pluItemBTN1Info;
-        	//var pLUItemsList = repo.NCRNEXTGENUI.PLUItemsList;
+        	
 
         	
         	pluItemBtn1Info.WaitForExists(pluItemBtn1Info.SearchTimeout);
-        	pluItemBTN1.Click();      	
-   
+        	pluItemBTN1.Click();    
+     	
         }
         
         public string verifyTotal(){

@@ -165,6 +165,7 @@ namespace SCO_Test
             RepoItemInfo _yesemptycartbtnInfo;
             RepoItemInfo _yescancelallitemsbtnInfo;
             RepoItemInfo _scanitemsearchkeyinitemInfo;
+            RepoItemInfo _cartreceiptInfo;
 
             /// <summary>
             /// Creates a new NCRNEXTGENUI  folder.
@@ -189,6 +190,7 @@ namespace SCO_Test
                 _yesemptycartbtnInfo = new RepoItemInfo(this, "yesEmptyCartBtn", "container[@automationid='ConfirmAbortPanel']/container[2]/button[@automationid='YesButton']", ".//button[@automationid='YesButton']", 30000, null, "5fe00bb6-1881-4a42-a16e-5bf8c529b824");
                 _yescancelallitemsbtnInfo = new RepoItemInfo(this, "yesCancelAllItemsBtn", "list[@automationid='ContainerStoreModeButtonsItemsControl']/button[@automationid='StoreButton1']", "?/?/button[@automationid='StoreButton1']", 30000, null, "9b862be0-faf8-416c-ae0e-b9da3d0ac545");
                 _scanitemsearchkeyinitemInfo = new RepoItemInfo(this, "ScanItemSearchKeyInItem", "container[@automationid='ScanItemStatus']/button[@automationid='ScanItemSearchKeyInItem']", "?/?/button[@automationid='ScanItemSearchKeyInItem']", 30000, null, "b3d74d39-3281-41e7-be2d-53a1256bf535");
+                _cartreceiptInfo = new RepoItemInfo(this, "CartReceipt", "container[@automationid='CartControl']/list[@automationid='CartReceipt']", "?/?/list[@automationid='CartReceipt']", 30000, null, "de5aaa04-99f8-4f5e-ba77-61a0de9640b4");
             }
 
             /// <summary>
@@ -596,6 +598,30 @@ namespace SCO_Test
                 get
                 {
                     return _scanitemsearchkeyinitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CartReceipt item.
+            /// </summary>
+            [RepositoryItem("de5aaa04-99f8-4f5e-ba77-61a0de9640b4")]
+            public virtual Ranorex.List CartReceipt
+            {
+                get
+                {
+                    return _cartreceiptInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CartReceipt item info.
+            /// </summary>
+            [RepositoryItemInfo("de5aaa04-99f8-4f5e-ba77-61a0de9640b4")]
+            public virtual RepoItemInfo CartReceiptInfo
+            {
+                get
+                {
+                    return _cartreceiptInfo;
                 }
             }
 
