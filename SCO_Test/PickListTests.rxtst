@@ -104,6 +104,9 @@
 			<testcase
 			id="1e744b21-18d7-4d75-b9c6-bab40e7ea8a6"
 			name="test_pickCigarettesApprovalYes">
+				<description>
+					<![CDATA[des]]>
+				</description>
 			</testcase>
 			<testcase
 			id="1e8b1820-5a27-41cf-a6a2-ace56e792e1a"
