@@ -13,10 +13,23 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>c6efa30b-17e6-40eb-a902-08058e33eb2d</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
-    <Prefer32Bit>True</Prefer32Bit>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -26,6 +39,8 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -41,7 +56,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Core">
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Ranorex.Core.Resolver">
       <Private>True</Private>
@@ -137,6 +152,18 @@
       <UserCode>true</UserCode>
       <id>0d0807cb-044b-401c-afaa-e53075a304b1</id>
     </Compile>
+    <Compile Include="CloseLayerTester.cs">
+      <BoundTo>6712a200-0896-47f8-b00d-70e64bf3a8a8</BoundTo>
+      <DependentUpon>CloseLayerTester.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef01cf4e-d4cd-4b0d-b992-e0a2b3d2cf6b</id>
+    </Compile>
+    <Compile Include="CloseLayerTester.UserCode.cs">
+      <BoundTo>6712a200-0896-47f8-b00d-70e64bf3a8a8</BoundTo>
+      <DependentUpon>CloseLayerTester.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>95069e0a-1091-47ec-9b06-d413285b8518</id>
+    </Compile>
     <Compile Include="CodeModules\genCode.cs">
       <id>8287983f-9291-4103-8a3c-bda90a2b2b35</id>
     </Compile>
@@ -145,6 +172,774 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>83264300-069f-41b2-886f-47a15eee40c8</id>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_approvalNeededNo.cs">
+      <DependentUpon>test_approvalNeededNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fef814dc-70c0-4648-aad2-49190e2df534</id>
+      <BoundTo>529f6003-83bd-403e-aafb-f467aa086e8a</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_approvalNeededNo.UserCode.cs">
+      <DependentUpon>test_approvalNeededNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfbdf250-2df2-4db2-bc91-87937e364b56</id>
+      <BoundTo>529f6003-83bd-403e-aafb-f467aa086e8a</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_approvalNeededYes.cs">
+      <DependentUpon>test_approvalNeededYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ebf5bcb-9f8d-468e-9fb4-6b378553b493</id>
+      <BoundTo>e9c1f4ab-0249-4534-bcc2-898e2a1f35fb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_approvalNeededYes.UserCode.cs">
+      <DependentUpon>test_approvalNeededYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18c06c59-a48f-4701-b813-b457a0bba15d</id>
+      <BoundTo>e9c1f4ab-0249-4534-bcc2-898e2a1f35fb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_closeLane.cs">
+      <DependentUpon>test_closeLane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ae3b554-ea89-48b1-9f30-963035d35335</id>
+      <BoundTo>50aba7b8-ac9d-4bcf-87ee-2788300ac49b</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_closeLane.UserCode.cs">
+      <DependentUpon>test_closeLane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>705e07c3-17d3-49e5-8281-b315735ff84f</id>
+      <BoundTo>50aba7b8-ac9d-4bcf-87ee-2788300ac49b</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_helpIsOnTheWay.cs">
+      <DependentUpon>test_helpIsOnTheWay.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>473a0659-ae33-4d3b-852d-a6ac2370048a</id>
+      <BoundTo>8b7a5b3b-2624-43d4-a519-667e5a1344cc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\AssitanceRecordings\test_helpIsOnTheWay.UserCode.cs">
+      <DependentUpon>test_helpIsOnTheWay.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d467d697-c737-4db2-b709-0050a0e7b5ba</id>
+      <BoundTo>8b7a5b3b-2624-43d4-a519-667e5a1344cc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\LayerTester.cs">
+      <BoundTo>f9d882ff-8d66-4749-9481-bbbed63b4f93</BoundTo>
+      <DependentUpon>LayerTester.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69b9e33e-2ff9-4e5b-83bb-d9e262161dfb</id>
+    </Compile>
+    <Compile Include="Recording Modules\LayerTester.UserCode.cs">
+      <BoundTo>f9d882ff-8d66-4749-9481-bbbed63b4f93</BoundTo>
+      <DependentUpon>LayerTester.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4fe7e8f-f7fb-467c-bbf0-431bc5dbe25e</id>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPick02Barcode.cs">
+      <DependentUpon>test_pedPick02Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a23fada-7798-4299-8ade-147f7f2da9d8</id>
+      <BoundTo>e9bc102e-f1d3-46de-9690-b1ed6d13ccc7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPick02Barcode.UserCode.cs">
+      <DependentUpon>test_pedPick02Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5bba9257-3f99-40eb-b0f1-fa1463ba1da1</id>
+      <BoundTo>e9bc102e-f1d3-46de-9690-b1ed6d13ccc7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScan02Barcode.cs">
+      <DependentUpon>test_pedScan02Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c20fee73-40f3-484e-84cf-6a3a0fce5078</id>
+      <BoundTo>23990a07-5eac-4d17-ab27-90869e5845a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScan02Barcode.UserCode.cs">
+      <DependentUpon>test_pedScan02Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c611c4b-008a-4c38-b0a4-c9ab9c95a78c</id>
+      <BoundTo>23990a07-5eac-4d17-ab27-90869e5845a0</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPick20Barcode.cs">
+      <DependentUpon>test_pedPick20Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c7529d78-ba7b-4c14-9fa8-aa3437a32a82</id>
+      <BoundTo>8b4cce2d-430d-481b-b747-3fa8bf663a9f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPick20Barcode.UserCode.cs">
+      <DependentUpon>test_pedPick20Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>73befa78-f636-4080-9df6-139622772eff</id>
+      <BoundTo>8b4cce2d-430d-481b-b747-3fa8bf663a9f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScan20Barcode.cs">
+      <DependentUpon>test_pedScan20Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6559a0a5-dac6-4c83-9da0-91735c6b84f7</id>
+      <BoundTo>1c6b4deb-784f-466c-82bc-6165f3c30c82</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScan20Barcode.UserCode.cs">
+      <DependentUpon>test_pedScan20Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fb89833-e1e1-438c-8497-b0eee88412c4</id>
+      <BoundTo>1c6b4deb-784f-466c-82bc-6165f3c30c82</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBeerApprovalYes.cs">
+      <DependentUpon>test_pedScanBeerApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>161e14ea-7d0b-41d5-ac4e-94624fa9a837</id>
+      <BoundTo>6a901de0-c491-4c08-8e7e-c4043f074bf8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBeerApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedScanBeerApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1522f931-f111-45c2-8de7-d2c734148bc8</id>
+      <BoundTo>6a901de0-c491-4c08-8e7e-c4043f074bf8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanCigarettesApprovalYes.cs">
+      <DependentUpon>test_pedScanCigarettesApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e5fc88c9-0429-4481-a051-d27666de0d16</id>
+      <BoundTo>a54b0470-cd4d-4880-878e-f14bcb830f9f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanCigarettesApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedScanCigarettesApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2eb519e-2fe4-4b03-8156-0073c45d2b5b</id>
+      <BoundTo>a54b0470-cd4d-4880-878e-f14bcb830f9f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanWhiskeyApprovalYes.cs">
+      <DependentUpon>test_pedScanWhiskeyApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9d998e0-9739-4759-b13a-0e729e82e0bc</id>
+      <BoundTo>f5c3384d-4626-4d46-b11b-1a945ab377aa</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanWhiskeyApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedScanWhiskeyApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ad19f57-2642-458a-a1e4-a5e08bd0ed5a</id>
+      <BoundTo>f5c3384d-4626-4d46-b11b-1a945ab377aa</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickBeerApprovalYes.cs">
+      <DependentUpon>test_pedPickBeerApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f6bc3c0-ad51-4796-933c-d2a7bba0e476</id>
+      <BoundTo>cc8074ca-ac26-4184-ad68-57cc1c3ce8fc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickBeerApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedPickBeerApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1098c3ae-5820-4e33-b75f-bfbf159fb852</id>
+      <BoundTo>cc8074ca-ac26-4184-ad68-57cc1c3ce8fc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickCigarettesApprovalYes.cs">
+      <DependentUpon>test_pedPickCigarettesApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>264413ad-026d-4c26-beb5-9470e01f5b9f</id>
+      <BoundTo>41578d00-234b-45b1-8713-b5cad2fb832f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickCigarettesApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedPickCigarettesApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20c449a1-86ff-4965-b059-76dbb91edfb4</id>
+      <BoundTo>41578d00-234b-45b1-8713-b5cad2fb832f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickWhiskeyApprovalYes.cs">
+      <DependentUpon>test_pedPickWhiskeyApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39cb450e-b0b1-4d8b-a14d-2c0c7e2c95a1</id>
+      <BoundTo>2d770ff6-300a-41f0-9ae2-b854ca0bd510</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickWhiskeyApprovalYes.UserCode.cs">
+      <DependentUpon>test_pedPickWhiskeyApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f4afee59-a40b-4f16-9178-9bd9cff3b359</id>
+      <BoundTo>2d770ff6-300a-41f0-9ae2-b854ca0bd510</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBogofDeal.cs">
+      <DependentUpon>test_pedScanBogofDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33f79f12-9513-40e9-9b73-0b893ff95e61</id>
+      <BoundTo>451dbaf5-107e-400d-bd2b-da029893e402</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBogofDeal.UserCode.cs">
+      <DependentUpon>test_pedScanBogofDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f8e9263-da82-46c3-bbc8-c91c77bd0086</id>
+      <BoundTo>451dbaf5-107e-400d-bd2b-da029893e402</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBuy3GetOneFree.cs">
+      <DependentUpon>test_pedScanBuy3GetOneFree.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a4d0c2c-7f6d-4ffa-867c-912aa18bb7d1</id>
+      <BoundTo>4592838b-0f6d-47d9-a793-4d4f1265c6a8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedScanBuy3GetOneFree.UserCode.cs">
+      <DependentUpon>test_pedScanBuy3GetOneFree.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4dc49ef4-0690-4792-916e-b16673d4ce38</id>
+      <BoundTo>4592838b-0f6d-47d9-a793-4d4f1265c6a8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickLinkDealBogof.cs">
+      <DependentUpon>test_pedPickLinkDealBogof.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4ff16681-7e2a-4f58-beba-a1c1da386253</id>
+      <BoundTo>1dfb98e9-5cab-4192-9f3a-5a087d7d7453</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickLinkDealBogof.UserCode.cs">
+      <DependentUpon>test_pedPickLinkDealBogof.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cfbaebf-3a38-40ea-b90d-1912d1d8f0bb</id>
+      <BoundTo>1dfb98e9-5cab-4192-9f3a-5a087d7d7453</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickMealDeal.cs">
+      <DependentUpon>test_pedPickMealDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7f429c05-e704-48a5-b8d6-6f3c31f0fd9e</id>
+      <BoundTo>5e5ae281-5589-4cfd-9ca9-93f587a2fac6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickMealDeal.UserCode.cs">
+      <DependentUpon>test_pedPickMealDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bf397ae-73cf-42c1-a879-717bc79d3782</id>
+      <BoundTo>5e5ae281-5589-4cfd-9ca9-93f587a2fac6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickPricePromo.cs">
+      <DependentUpon>test_pedPickPricePromo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d6085f7-08d7-4c7e-b573-85c879f9acaf</id>
+      <BoundTo>7e5c05e2-b68e-44b9-a0cd-dc1819c56a09</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PEDRecordings\test_pedPickPricePromo.UserCode.cs">
+      <DependentUpon>test_pedPickPricePromo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a1d34c7-568c-4f43-8d25-902d22fe1bae</id>
+      <BoundTo>7e5c05e2-b68e-44b9-a0cd-dc1819c56a09</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_2QuantityPlu.cs">
+      <DependentUpon>test_2QuantityPlu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4144b21d-deff-4b40-a3eb-c445e1fa2dce</id>
+      <BoundTo>4994fa74-e828-4ba8-a637-09ef1109c098</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_2QuantityPlu.UserCode.cs">
+      <DependentUpon>test_2QuantityPlu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>948e1f14-e94c-45da-b082-244837ae4907</id>
+      <BoundTo>4994fa74-e828-4ba8-a637-09ef1109c098</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_nonScanKeysVoid.cs">
+      <DependentUpon>test_nonScanKeysVoid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>251c35b9-2dcd-4a12-8559-ac1f1bdc3a36</id>
+      <BoundTo>8ad36940-c3ed-4eb7-b63e-957263922591</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_nonScanKeysVoid.UserCode.cs">
+      <DependentUpon>test_nonScanKeysVoid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aed7b718-3c22-4761-a094-37ab67dd89c9</id>
+      <BoundTo>8ad36940-c3ed-4eb7-b63e-957263922591</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick02Barcode.cs">
+      <DependentUpon>test_pick02Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>95e7b934-c478-466e-8015-d6cf47c147b3</id>
+      <BoundTo>997cd3f6-3549-4893-b421-13438dc78304</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick02Barcode.UserCode.cs">
+      <DependentUpon>test_pick02Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>51c55b10-7ec0-4169-b317-169a2e7e6362</id>
+      <BoundTo>997cd3f6-3549-4893-b421-13438dc78304</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick13DigitBarcode.cs">
+      <DependentUpon>test_pick13DigitBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0fa4768e-f87a-4b0f-a9a9-b3a20ee4191d</id>
+      <BoundTo>06039188-991a-4071-ae22-32992270b7d5</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick13DigitBarcode.UserCode.cs">
+      <DependentUpon>test_pick13DigitBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6cb6cdb3-9d4b-403a-a0ac-f2f1aec351b2</id>
+      <BoundTo>06039188-991a-4071-ae22-32992270b7d5</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick20Barcode.cs">
+      <DependentUpon>test_pick20Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f75f36ab-23e0-4a93-ad7b-92d807922f4c</id>
+      <BoundTo>3ab9d7eb-4878-4684-8c69-6853c6a9b3d9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick20Barcode.UserCode.cs">
+      <DependentUpon>test_pick20Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76a07ab3-a992-4a31-8a4d-b8c9937f30f2</id>
+      <BoundTo>3ab9d7eb-4878-4684-8c69-6853c6a9b3d9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick8DigitBarcode.cs">
+      <DependentUpon>test_pick8DigitBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a04c4363-f928-4f94-9261-93b8453d287b</id>
+      <BoundTo>242e8495-b694-4513-83c5-4e618b5a45ac</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pick8DigitBarcode.UserCode.cs">
+      <DependentUpon>test_pick8DigitBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e4ae9cb-8f17-4e0d-b8e2-bbf55c4dacf7</id>
+      <BoundTo>242e8495-b694-4513-83c5-4e618b5a45ac</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBeerApprovalNo.cs">
+      <DependentUpon>test_pickBeerApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>407b1e0c-64d8-411a-8404-b0264f44eb4f</id>
+      <BoundTo>7d102cef-40e9-4388-957d-15cfbc4dcba1</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBeerApprovalNo.UserCode.cs">
+      <DependentUpon>test_pickBeerApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a1e003d-0709-49b4-9bc8-6ad6ee5221e1</id>
+      <BoundTo>7d102cef-40e9-4388-957d-15cfbc4dcba1</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBeerApprovalYes.cs">
+      <DependentUpon>test_pickBeerApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>100707ff-30d3-4ebe-ad36-4235fbdb386a</id>
+      <BoundTo>20a8da39-9037-46b8-a032-5274f0375deb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBeerApprovalYes.UserCode.cs">
+      <DependentUpon>test_pickBeerApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3480f036-b960-4d90-97a7-d96dd761adcf</id>
+      <BoundTo>20a8da39-9037-46b8-a032-5274f0375deb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBogofDeal.cs">
+      <DependentUpon>test_pickBogofDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0d0ff4a-cbd2-4b75-b720-510b083b5a6d</id>
+      <BoundTo>6ac49af6-ee94-4ce8-9035-d4c8d35f53e7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBogofDeal.UserCode.cs">
+      <DependentUpon>test_pickBogofDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>49c6240f-d0c5-49fa-b467-c497b609d648</id>
+      <BoundTo>6ac49af6-ee94-4ce8-9035-d4c8d35f53e7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBuy3GetOneFree.cs">
+      <DependentUpon>test_pickBuy3GetOneFree.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d56ff38c-711a-48e3-bd7d-d3ffeadc6155</id>
+      <BoundTo>3b6c1c62-6a1d-4456-8a61-547d4afee990</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickBuy3GetOneFree.UserCode.cs">
+      <DependentUpon>test_pickBuy3GetOneFree.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>605aa8c2-3c6c-40a0-87c9-0fa50e22477b</id>
+      <BoundTo>3b6c1c62-6a1d-4456-8a61-547d4afee990</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalNo.cs">
+      <DependentUpon>test_pickCigarettesApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a93881d0-3d8d-4f1f-ab7d-9ddf074cb6a1</id>
+      <BoundTo>380629a7-3a96-47f9-b853-061e35458843</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalNo.UserCode.cs">
+      <DependentUpon>test_pickCigarettesApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e2688152-21b0-494d-a927-d1950e339944</id>
+      <BoundTo>380629a7-3a96-47f9-b853-061e35458843</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalYes.cs">
+      <DependentUpon>test_pickCigarettesApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc092127-219a-4c1e-a2cf-32fc9a30d399</id>
+      <BoundTo>939ad31b-0180-4172-8161-47886b87f3cb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalYes.UserCode.cs">
+      <DependentUpon>test_pickCigarettesApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>04c33c5d-52a7-42c9-9e92-92c7ea332bf7</id>
+      <BoundTo>939ad31b-0180-4172-8161-47886b87f3cb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickLinkDealBogof.cs">
+      <DependentUpon>test_pickLinkDealBogof.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e215716-5e13-4e9b-8e04-517faa6dccc0</id>
+      <BoundTo>e2f3f777-54c7-4621-81f8-99e43b994280</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickLinkDealBogof.UserCode.cs">
+      <DependentUpon>test_pickLinkDealBogof.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afa4a37e-eac4-4be9-a6cd-e4e16f4f77d5</id>
+      <BoundTo>e2f3f777-54c7-4621-81f8-99e43b994280</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickMealDeal.cs">
+      <DependentUpon>test_pickMealDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c39fed6-d137-482d-aaee-80da51d0a4a9</id>
+      <BoundTo>c3f62dc6-710d-48e1-a386-1aef22426682</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickMealDeal.UserCode.cs">
+      <DependentUpon>test_pickMealDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5794e8d8-1dca-44a5-8390-90ff887b6df8</id>
+      <BoundTo>c3f62dc6-710d-48e1-a386-1aef22426682</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickPricePromo.cs">
+      <DependentUpon>test_pickPricePromo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03a79f73-7319-4ff0-bb99-f94dd2721444</id>
+      <BoundTo>b847ca78-dea4-4104-8385-9185815a87d2</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickPricePromo.UserCode.cs">
+      <DependentUpon>test_pickPricePromo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f877bdd-0167-427c-b0e1-9d5764232c11</id>
+      <BoundTo>b847ca78-dea4-4104-8385-9185815a87d2</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickReducedCode.cs">
+      <DependentUpon>test_pickReducedCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3856fd1-b65c-4a62-90a6-ef0ad5dfce7f</id>
+      <BoundTo>8a3c6f66-b8a8-4775-963e-48cc9eb5c19f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickReducedCode.UserCode.cs">
+      <DependentUpon>test_pickReducedCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ce5b9db-46c0-4ebc-927f-f30e1e34123b</id>
+      <BoundTo>8a3c6f66-b8a8-4775-963e-48cc9eb5c19f</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWeightedItem.cs">
+      <DependentUpon>test_pickWeightedItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb0c5881-5a43-45ca-91d5-6027d4589179</id>
+      <BoundTo>940f78d1-b08e-42d0-8c9a-0fbdd66768e8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWeightedItem.UserCode.cs">
+      <DependentUpon>test_pickWeightedItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>595f4dbc-115c-444e-b1e9-18242733cdd8</id>
+      <BoundTo>940f78d1-b08e-42d0-8c9a-0fbdd66768e8</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalNo.cs">
+      <DependentUpon>test_pickWhiskeyApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>153c0e2d-12a1-4fcb-b605-f3b270a1a4e7</id>
+      <BoundTo>0890accd-0c0b-45f0-aeb5-474418ce77b6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalNo.UserCode.cs">
+      <DependentUpon>test_pickWhiskeyApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f99207f-3a81-4bd0-b054-11a0f51ca3b5</id>
+      <BoundTo>0890accd-0c0b-45f0-aeb5-474418ce77b6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalYes.cs">
+      <DependentUpon>test_pickWhiskeyApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9725f94d-ad20-4529-af1d-9c8adba9cab8</id>
+      <BoundTo>8e8bd089-d4a7-40ab-b9f3-541a5dcc69b7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalYes.UserCode.cs">
+      <DependentUpon>test_pickWhiskeyApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76a41394-5986-4ad8-9958-2108b2c90f2b</id>
+      <BoundTo>8e8bd089-d4a7-40ab-b9f3-541a5dcc69b7</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_voidAll.cs">
+      <DependentUpon>test_voidAll.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b532bb4b-9e64-4134-8c01-6d3924e58cef</id>
+      <BoundTo>40254976-4f84-4383-8939-ecdf593c8fdf</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_voidAll.UserCode.cs">
+      <DependentUpon>test_voidAll.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>221a191a-6f36-4ff8-9151-256d6dfdfd30</id>
+      <BoundTo>40254976-4f84-4383-8939-ecdf593c8fdf</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_voidSingle.cs">
+      <DependentUpon>test_voidSingle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b30c820c-9bd5-43ca-8c1b-35aae780ac48</id>
+      <BoundTo>44f365a6-b880-4328-9fba-b25413974675</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\PickListRecordings\test_voidSingle.UserCode.cs">
+      <DependentUpon>test_voidSingle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d3f59572-7b79-4f4e-bd9d-549678436e50</id>
+      <BoundTo>44f365a6-b880-4328-9fba-b25413974675</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printLastReceipt.cs">
+      <DependentUpon>test_printLastReceipt.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>acf1d623-0576-405b-8906-a8e9666b21b6</id>
+      <BoundTo>9553cadd-374d-40e4-9603-8ff592a85100</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printLastReceipt.UserCode.cs">
+      <DependentUpon>test_printLastReceipt.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe5c985c-5791-433e-ace0-0461e0c01fb2</id>
+      <BoundTo>9553cadd-374d-40e4-9603-8ff592a85100</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printOperatorScanBarcode.cs">
+      <DependentUpon>test_printOperatorScanBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8b57a63-d1c0-4507-9c24-04cc32a5a010</id>
+      <BoundTo>b68ae759-3b66-4e9c-92b8-5bc5fd95389a</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printOperatorScanBarcode.UserCode.cs">
+      <DependentUpon>test_printOperatorScanBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3df4358c-8c45-4d59-8db8-088a1dc716ba</id>
+      <BoundTo>b68ae759-3b66-4e9c-92b8-5bc5fd95389a</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printReceipt.cs">
+      <DependentUpon>test_printReceipt.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a436f4d9-51a0-46cc-8f57-c7d1865344a7</id>
+      <BoundTo>54d9ec4e-9294-4ee8-af3c-b0891458b553</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printReceipt.UserCode.cs">
+      <DependentUpon>test_printReceipt.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89cbc485-1e21-4e58-ac09-0ce0cdf6ed03</id>
+      <BoundTo>54d9ec4e-9294-4ee8-af3c-b0891458b553</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printReceiptAppearsAndDissapears.cs">
+      <DependentUpon>test_printReceiptAppearsAndDissapears.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>390d2a27-5c49-4ee4-9745-71a3483d5367</id>
+      <BoundTo>98d1b6d8-7918-4ef0-95d3-e527538a06c9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReceiptRecordings\test_printReceiptAppearsAndDissapears.UserCode.cs">
+      <DependentUpon>test_printReceiptAppearsAndDissapears.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>74dfeed8-5876-4e22-b142-4104117f2c12</id>
+      <BoundTo>98d1b6d8-7918-4ef0-95d3-e527538a06c9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReportRecordings\test_runTodaySalesReport.cs">
+      <DependentUpon>test_runTodaySalesReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e581afa-a870-42bb-ada1-de147d394dbf</id>
+      <BoundTo>5089b08a-4994-4e33-89c7-746ec882e6a9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReportRecordings\test_runTodaySalesReport.UserCode.cs">
+      <DependentUpon>test_runTodaySalesReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81ef7457-7d5f-49f2-afef-a4f8ca9c07c3</id>
+      <BoundTo>5089b08a-4994-4e33-89c7-746ec882e6a9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReportRecordings\test_runTodaySummaryReportByCashier.cs">
+      <DependentUpon>test_runTodaySummaryReportByCashier.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d3c6051-4c39-4927-b25f-94919a86f917</id>
+      <BoundTo>3d010e59-ded8-4954-9730-d98f124ed17d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ReportRecordings\test_runTodaySummaryReportByCashier.UserCode.cs">
+      <DependentUpon>test_runTodaySummaryReportByCashier.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e8f0535-06bf-4ab7-b802-4a5e29a653bd</id>
+      <BoundTo>3d010e59-ded8-4954-9730-d98f124ed17d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan02Barcode.cs">
+      <DependentUpon>test_scan02Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>24304201-244c-40d0-8888-bc0fdccbe236</id>
+      <BoundTo>272a5a89-edde-40eb-a05b-7908ecd173d5</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan02Barcode.UserCode.cs">
+      <DependentUpon>test_scan02Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2db0a0c-9048-4278-a090-b9f8d3f7f9c9</id>
+      <BoundTo>272a5a89-edde-40eb-a05b-7908ecd173d5</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan13DigitBarcode.cs">
+      <DependentUpon>test_scan13DigitBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fecda997-b1df-43f8-ac07-ff8d7f12b5ee</id>
+      <BoundTo>dd583351-c948-45e3-852f-d38b93aa725d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan13DigitBarcode.UserCode.cs">
+      <DependentUpon>test_scan13DigitBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37fe745e-1ca1-48b4-a132-5a398c3fab7e</id>
+      <BoundTo>dd583351-c948-45e3-852f-d38b93aa725d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan20Barcode.cs">
+      <DependentUpon>test_scan20Barcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53515e97-a825-4118-9624-d132e4e8552d</id>
+      <BoundTo>2f30bb07-89a6-4d5c-849e-662113a4d76e</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan20Barcode.UserCode.cs">
+      <DependentUpon>test_scan20Barcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8867228-40e3-4ea6-83fb-ccd1e0047fd1</id>
+      <BoundTo>2f30bb07-89a6-4d5c-849e-662113a4d76e</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan8DigitBarcode.cs">
+      <DependentUpon>test_scan8DigitBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63df0667-a715-4e1a-9811-7d9506fe2a50</id>
+      <BoundTo>75b6ae8f-d4b7-4d89-b275-72f37079c43d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scan8DigitBarcode.UserCode.cs">
+      <DependentUpon>test_scan8DigitBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>421cfb8f-cd9b-4e04-ad24-97977992851c</id>
+      <BoundTo>75b6ae8f-d4b7-4d89-b275-72f37079c43d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBeerApprovalNo.cs">
+      <DependentUpon>test_scanBeerApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba824072-7571-4c4d-afdb-5a4f16101e46</id>
+      <BoundTo>25653457-bf2f-4c77-b02a-08d2fcc1548d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBeerApprovalNo.UserCode.cs">
+      <DependentUpon>test_scanBeerApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1987ea3b-f26f-4380-9c2a-3372738218b9</id>
+      <BoundTo>25653457-bf2f-4c77-b02a-08d2fcc1548d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBeerApprovalYes.cs">
+      <DependentUpon>test_scanBeerApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd3bec00-452e-4ba3-891d-08fd49b7f14f</id>
+      <BoundTo>5ec135e5-6329-44e7-b6d8-ad383b0679fc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBeerApprovalYes.UserCode.cs">
+      <DependentUpon>test_scanBeerApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c3c8b908-5bbb-4c6e-a259-da2940e0013f</id>
+      <BoundTo>5ec135e5-6329-44e7-b6d8-ad383b0679fc</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBogofDeal.cs">
+      <DependentUpon>test_scanBogofDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3852c47-0350-45e4-9ea5-74ef6ca59eea</id>
+      <BoundTo>4b5681db-3aa6-48bf-b616-77d2ea4d98c6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBogofDeal.UserCode.cs">
+      <DependentUpon>test_scanBogofDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3065a3cc-12f1-4f94-94ac-7fcba6e49a7f</id>
+      <BoundTo>4b5681db-3aa6-48bf-b616-77d2ea4d98c6</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBuy3GetOneFree.cs">
+      <DependentUpon>test_scanBuy3GetOneFree.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>737f4ede-4061-4619-9332-7b30cb003b7c</id>
+      <BoundTo>32437748-335e-4944-aa87-98e17d1d315d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanBuy3GetOneFree.UserCode.cs">
+      <DependentUpon>test_scanBuy3GetOneFree.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1baee9e-a05e-424c-aa10-1e2c427507f8</id>
+      <BoundTo>32437748-335e-4944-aa87-98e17d1d315d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalNo.cs">
+      <DependentUpon>test_scanCigarettesApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7010e0a6-2309-4c13-b3f3-ef9ad17b53e0</id>
+      <BoundTo>5061c17f-cb8f-416f-9e2a-01933a0bc3cd</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalNo.UserCode.cs">
+      <DependentUpon>test_scanCigarettesApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45428fcc-e257-4008-9f6c-ce747b02d08c</id>
+      <BoundTo>5061c17f-cb8f-416f-9e2a-01933a0bc3cd</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalYes.cs">
+      <DependentUpon>test_scanCigarettesApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9be7d519-bbbb-4aec-8530-85e6b8489421</id>
+      <BoundTo>ee94c135-a59f-495b-bb67-e640e6e10bd2</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalYes.UserCode.cs">
+      <DependentUpon>test_scanCigarettesApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ad1ff47-6093-4f03-a469-9051be90026b</id>
+      <BoundTo>ee94c135-a59f-495b-bb67-e640e6e10bd2</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_ScanDealaSetPriceMealDeal.cs">
+      <DependentUpon>test_ScanDealaSetPriceMealDeal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>38cb6d3b-5960-49a9-bc58-f4d33f3d86aa</id>
+      <BoundTo>44e5380d-2593-4dda-8e18-7c8b4b9aef96</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_ScanDealaSetPriceMealDeal.UserCode.cs">
+      <DependentUpon>test_ScanDealaSetPriceMealDeal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1fa029e-d148-4a4e-808f-18b78172d7f6</id>
+      <BoundTo>44e5380d-2593-4dda-8e18-7c8b4b9aef96</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanLinkDealBogof.cs">
+      <DependentUpon>test_scanLinkDealBogof.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>296c3726-d405-4094-85cf-a79f2a74e38d</id>
+      <BoundTo>cd03d8fe-0fd7-4583-be0b-31787b0dd0fb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanLinkDealBogof.UserCode.cs">
+      <DependentUpon>test_scanLinkDealBogof.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b9d94eb-62eb-4d3c-a846-85d50005ef75</id>
+      <BoundTo>cd03d8fe-0fd7-4583-be0b-31787b0dd0fb</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanPricePromotion.cs">
+      <DependentUpon>test_scanPricePromotion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45b4dc6c-bf64-4305-8bff-9bb3907f2961</id>
+      <BoundTo>95523d61-b5c2-4234-9646-c555b15da1a3</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanPricePromotion.UserCode.cs">
+      <DependentUpon>test_scanPricePromotion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc28a962-138e-43ae-b238-5911592a2d96</id>
+      <BoundTo>95523d61-b5c2-4234-9646-c555b15da1a3</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanReducedBarcode.cs">
+      <DependentUpon>test_scanReducedBarcode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3aa4597-ee1b-4eb9-b8b6-2ffccff751cb</id>
+      <BoundTo>ad41a1b4-44de-4d77-9195-a41235629658</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanReducedBarcode.UserCode.cs">
+      <DependentUpon>test_scanReducedBarcode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d591ef12-f9a6-4103-acd3-363465bd61f8</id>
+      <BoundTo>ad41a1b4-44de-4d77-9195-a41235629658</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWeightedItem.cs">
+      <DependentUpon>test_scanWeightedItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c137bb84-fa67-4767-8305-f520dc1cef54</id>
+      <BoundTo>66ffe104-b1a2-4685-a0ca-fafe848e443b</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWeightedItem.UserCode.cs">
+      <DependentUpon>test_scanWeightedItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2aaf54d0-3a49-4b35-a2aa-83e03257ccfe</id>
+      <BoundTo>66ffe104-b1a2-4685-a0ca-fafe848e443b</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalNo.cs">
+      <DependentUpon>test_scanWhiskeyApprovalNo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c6c77430-e3e0-4730-9cf5-80945d3f8b80</id>
+      <BoundTo>6950a660-f902-4ed6-8eff-ffcf70b9854d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalNo.UserCode.cs">
+      <DependentUpon>test_scanWhiskeyApprovalNo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d3dfa13-c4d1-4f53-9a01-5f8e021b3f3f</id>
+      <BoundTo>6950a660-f902-4ed6-8eff-ffcf70b9854d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalYes.cs">
+      <DependentUpon>test_scanWhiskeyApprovalYes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>05d041ff-63b6-48db-8ab2-4ef797ca2499</id>
+      <BoundTo>663610f9-710e-4029-9d05-2a9257ed752e</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalYes.UserCode.cs">
+      <DependentUpon>test_scanWhiskeyApprovalYes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>96b42223-6543-4d21-b3b0-aebb791eb0e2</id>
+      <BoundTo>663610f9-710e-4029-9d05-2a9257ed752e</BoundTo>
     </Compile>
     <Compile Include="SCO_TestRepository.cs">
       <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
@@ -164,8 +959,56 @@
       <UserCode>true</UserCode>
       <id>349d9f6d-8996-4927-9019-1a90ea984722</id>
     </Compile>
+    <Compile Include="StartLayerTester.cs">
+      <BoundTo>d2f95657-82a4-482e-9aee-29271dfbcdf3</BoundTo>
+      <DependentUpon>StartLayerTester.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e54c3948-27e7-4587-ba33-03fa60e4740a</id>
+    </Compile>
+    <Compile Include="StartLayerTester.UserCode.cs">
+      <BoundTo>d2f95657-82a4-482e-9aee-29271dfbcdf3</BoundTo>
+      <DependentUpon>StartLayerTester.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35b1f3bf-de96-473b-a829-528c561e598e</id>
+    </Compile>
+    <Compile Include="TestRec.cs">
+      <BoundTo>ea9215f9-abfc-47bd-a308-f388a6fa2729</BoundTo>
+      <DependentUpon>TestRec.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50be1616-65bd-46fd-bff3-9a705f5c7399</id>
+    </Compile>
+    <Compile Include="TestRec.UserCode.cs">
+      <BoundTo>ea9215f9-abfc-47bd-a308-f388a6fa2729</BoundTo>
+      <DependentUpon>TestRec.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>013ae26c-09b2-43a1-84f1-212e5fc47fe4</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PEDTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e00cba11-d5c1-4b47-aec3-d996fbf1abc6</id>
+    </Content>
+    <Content Include="PickListTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8081aff3-f21b-474a-99a7-2da9d7b96904</id>
+    </Content>
+    <Content Include="ScanPromotionTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c9e1ac7b-d05c-4b96-9e9a-e4a932896806</id>
+    </Content>
+    <Content Include="ReportTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>6ac493b4-066a-468d-85da-37641b6f096f</id>
+    </Content>
+    <Content Include="ScanTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>da195e94-3407-4793-8c56-970832b9bb83</id>
+    </Content>
+    <Content Include="ReceiptTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9152b153-7955-4e50-bf6c-9b75cd7afb21</id>
+    </Content>
     <None Include="app.config">
       <id>2084ed8f-63b4-41f5-a56b-56edce7cb596</id>
     </None>
@@ -173,6 +1016,335 @@
       <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
       <id>33936ee0-19fa-4eeb-bc18-4359a6d2448d</id>
       <recordtableid>2fe50939-04c4-40c7-bc3d-0c6e933fa1ac</recordtableid>
+    </None>
+    <Content Include="SCO_Test.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ff94f148-7809-4bef-b518-4184400a88ab</id>
+    </Content>
+    <None Include="CloseLayerTester.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>6712a200-0896-47f8-b00d-70e64bf3a8a8</id>
+      <recordtableid>c6365972-d0e3-4bbf-8736-2cfbd6be1590</recordtableid>
+    </None>
+    <None Include="Recording Modules\AssitanceRecordings\test_approvalNeededNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>529f6003-83bd-403e-aafb-f467aa086e8a</id>
+      <recordtableid>7e68dc88-87b3-4a16-8611-313782f7f24f</recordtableid>
+    </None>
+    <None Include="Recording Modules\AssitanceRecordings\test_approvalNeededYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>e9c1f4ab-0249-4534-bcc2-898e2a1f35fb</id>
+      <recordtableid>a4374f3c-8805-4b59-80b8-07689a9e6bc8</recordtableid>
+    </None>
+    <None Include="Recording Modules\AssitanceRecordings\test_closeLane.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>50aba7b8-ac9d-4bcf-87ee-2788300ac49b</id>
+      <recordtableid>21d31f69-cd83-42cb-b47a-fc06f39f175d</recordtableid>
+    </None>
+    <None Include="Recording Modules\AssitanceRecordings\test_helpIsOnTheWay.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>8b7a5b3b-2624-43d4-a519-667e5a1344cc</id>
+      <recordtableid>dda83dc5-09f8-477e-b986-bbe8791e177c</recordtableid>
+    </None>
+    <None Include="Recording Modules\LayerTester.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>f9d882ff-8d66-4749-9481-bbbed63b4f93</id>
+      <recordtableid>1b758a13-a0f8-43d2-9463-bfec2349634b</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPick02Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>e9bc102e-f1d3-46de-9690-b1ed6d13ccc7</id>
+      <recordtableid>0d2b7b9a-5848-4be7-99d4-6d057e28428e</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScan02Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>23990a07-5eac-4d17-ab27-90869e5845a0</id>
+      <recordtableid>3f156aec-c677-45d6-b8f2-33cfe66c0f56</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPick20Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>8b4cce2d-430d-481b-b747-3fa8bf663a9f</id>
+      <recordtableid>7d882ed7-8ef0-48ef-b683-ca3ac45a7e24</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScan20Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>1c6b4deb-784f-466c-82bc-6165f3c30c82</id>
+      <recordtableid>e244e95e-b607-47d8-aa89-f9a4bc45069b</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScanBeerApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>6a901de0-c491-4c08-8e7e-c4043f074bf8</id>
+      <recordtableid>d83c8854-4690-4fb0-84f3-699de5a9e1d4</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScanCigarettesApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>a54b0470-cd4d-4880-878e-f14bcb830f9f</id>
+      <recordtableid>ed29218f-0884-4519-8a59-087c582ea795</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScanWhiskeyApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>f5c3384d-4626-4d46-b11b-1a945ab377aa</id>
+      <recordtableid>fd020a3d-262a-495a-bb18-15091212a604</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickBeerApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>cc8074ca-ac26-4184-ad68-57cc1c3ce8fc</id>
+      <recordtableid>c3c3992e-6320-492f-b5bd-9e68c9a08d6c</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickCigarettesApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>41578d00-234b-45b1-8713-b5cad2fb832f</id>
+      <recordtableid>1a4f8e4a-b61c-4c45-94a8-3da3a2d37206</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickWhiskeyApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>2d770ff6-300a-41f0-9ae2-b854ca0bd510</id>
+      <recordtableid>e20c206a-9d60-416f-b0e1-f9f030b10338</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScanBogofDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>451dbaf5-107e-400d-bd2b-da029893e402</id>
+      <recordtableid>9e367ab8-63dc-4a13-9bd0-f1589187aa80</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedScanBuy3GetOneFree.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>4592838b-0f6d-47d9-a793-4d4f1265c6a8</id>
+      <recordtableid>1f99692e-f28c-41a9-bfd1-ea9ed085cc43</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickLinkDealBogof.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>1dfb98e9-5cab-4192-9f3a-5a087d7d7453</id>
+      <recordtableid>08d3acd9-f742-4cc6-92f8-b3b330e8fe77</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickMealDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>5e5ae281-5589-4cfd-9ca9-93f587a2fac6</id>
+      <recordtableid>2d5bb5b1-0cf8-4f8a-ac52-8d951c086880</recordtableid>
+    </None>
+    <None Include="Recording Modules\PEDRecordings\test_pedPickPricePromo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>7e5c05e2-b68e-44b9-a0cd-dc1819c56a09</id>
+      <recordtableid>f6f81dbf-6824-4bd0-a778-6305f15e843e</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_2QuantityPlu.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>4994fa74-e828-4ba8-a637-09ef1109c098</id>
+      <recordtableid>b08c6e6d-495c-465c-b4fa-058ba70ad4e5</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_nonScanKeysVoid.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>8ad36940-c3ed-4eb7-b63e-957263922591</id>
+      <recordtableid>8940d639-48f1-4e7e-9925-06bb33a0eaa0</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pick02Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>997cd3f6-3549-4893-b421-13438dc78304</id>
+      <recordtableid>f5b15470-3e96-43c1-85e0-28a3c3e52590</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pick13DigitBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>06039188-991a-4071-ae22-32992270b7d5</id>
+      <recordtableid>afb20a4b-1bc0-4b2f-85ab-9844d73933d5</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pick20Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>3ab9d7eb-4878-4684-8c69-6853c6a9b3d9</id>
+      <recordtableid>7514b9d5-d3a0-42d5-bbf0-b7160828ce43</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pick8DigitBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>242e8495-b694-4513-83c5-4e618b5a45ac</id>
+      <recordtableid>f3278680-62cd-4c8a-bc83-ff7245a18d5c</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickBeerApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>7d102cef-40e9-4388-957d-15cfbc4dcba1</id>
+      <recordtableid>686e68b1-868d-418e-bfdb-0efcd2da09c5</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickBeerApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>20a8da39-9037-46b8-a032-5274f0375deb</id>
+      <recordtableid>4c68fc51-1a6e-4d64-8fdc-a087ca4906e7</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickBogofDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>6ac49af6-ee94-4ce8-9035-d4c8d35f53e7</id>
+      <recordtableid>77fffafe-3088-4d61-ae4b-39ef8c47d411</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickBuy3GetOneFree.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>3b6c1c62-6a1d-4456-8a61-547d4afee990</id>
+      <recordtableid>f0bf1039-0dfd-4cec-9d5a-e7e96ee75545</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>380629a7-3a96-47f9-b853-061e35458843</id>
+      <recordtableid>295a455f-ecf3-4182-ad95-0a408147e773</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickCigarettesApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>939ad31b-0180-4172-8161-47886b87f3cb</id>
+      <recordtableid>333a5cba-764f-4ca7-85b4-a90a3a85622a</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickLinkDealBogof.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>e2f3f777-54c7-4621-81f8-99e43b994280</id>
+      <recordtableid>3f133468-65c4-4349-9be2-6072a4d33522</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickMealDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>c3f62dc6-710d-48e1-a386-1aef22426682</id>
+      <recordtableid>93fc0e2f-c8e0-48ec-85c7-36bf96ce6624</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickPricePromo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>b847ca78-dea4-4104-8385-9185815a87d2</id>
+      <recordtableid>86e2f373-d686-4932-af54-3b011032bf36</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickReducedCode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>8a3c6f66-b8a8-4775-963e-48cc9eb5c19f</id>
+      <recordtableid>78810976-1dde-4529-bb60-8ba9798129eb</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickWeightedItem.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>940f78d1-b08e-42d0-8c9a-0fbdd66768e8</id>
+      <recordtableid>0457c4b0-30d0-4b68-9f4c-8d3a94ccfd4f</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>0890accd-0c0b-45f0-aeb5-474418ce77b6</id>
+      <recordtableid>b675790b-a9bd-4cfa-92da-e1eb63a7318b</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_pickWhiskeyApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>8e8bd089-d4a7-40ab-b9f3-541a5dcc69b7</id>
+      <recordtableid>b79bd21d-7fbe-4897-97c5-7516cecc10f2</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_voidAll.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>40254976-4f84-4383-8939-ecdf593c8fdf</id>
+      <recordtableid>634220d3-14bb-42f7-98f7-75016d357405</recordtableid>
+    </None>
+    <None Include="Recording Modules\PickListRecordings\test_voidSingle.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>44f365a6-b880-4328-9fba-b25413974675</id>
+      <recordtableid>dbcf4517-c1fa-4a23-93c5-41419e9eb803</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReceiptRecordings\test_printLastReceipt.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>9553cadd-374d-40e4-9603-8ff592a85100</id>
+      <recordtableid>445daf4c-c291-41ca-bffd-e8fb5b83e402</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReceiptRecordings\test_printOperatorScanBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>b68ae759-3b66-4e9c-92b8-5bc5fd95389a</id>
+      <recordtableid>ea5e7366-79e5-4730-bcf6-ab7045964061</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReceiptRecordings\test_printReceipt.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>54d9ec4e-9294-4ee8-af3c-b0891458b553</id>
+      <recordtableid>38af3ed0-6df5-4bf0-a660-6bab389932f3</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReceiptRecordings\test_printReceiptAppearsAndDissapears.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>98d1b6d8-7918-4ef0-95d3-e527538a06c9</id>
+      <recordtableid>c567f177-b6b0-4f5f-8723-cd976afcbfc5</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReportRecordings\test_runTodaySalesReport.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>5089b08a-4994-4e33-89c7-746ec882e6a9</id>
+      <recordtableid>9e40a2e3-0a4d-4fc3-b1ed-8c3d6bbfe979</recordtableid>
+    </None>
+    <None Include="Recording Modules\ReportRecordings\test_runTodaySummaryReportByCashier.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>3d010e59-ded8-4954-9730-d98f124ed17d</id>
+      <recordtableid>d4c2059e-457d-4091-8e49-39ceee360888</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scan02Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>272a5a89-edde-40eb-a05b-7908ecd173d5</id>
+      <recordtableid>71568358-254e-4004-9254-42b8ee0b0d0f</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scan13DigitBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>dd583351-c948-45e3-852f-d38b93aa725d</id>
+      <recordtableid>52bf1d3e-ca3f-4120-9d28-c6739e20fb5a</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scan20Barcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>2f30bb07-89a6-4d5c-849e-662113a4d76e</id>
+      <recordtableid>c01aa7dc-2514-447f-b041-169f1f67057e</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scan8DigitBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>75b6ae8f-d4b7-4d89-b275-72f37079c43d</id>
+      <recordtableid>1e1f9230-920b-411b-a87d-ab9467063182</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanBeerApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>25653457-bf2f-4c77-b02a-08d2fcc1548d</id>
+      <recordtableid>e5a94ca3-b45d-4f9a-bd01-ed434c02703f</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanBeerApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>5ec135e5-6329-44e7-b6d8-ad383b0679fc</id>
+      <recordtableid>fd290753-2e2b-4640-a221-73000a33b236</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanBogofDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>4b5681db-3aa6-48bf-b616-77d2ea4d98c6</id>
+      <recordtableid>0b989543-df6b-424e-88e6-8d6cecb87f66</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanBuy3GetOneFree.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>32437748-335e-4944-aa87-98e17d1d315d</id>
+      <recordtableid>04124f9d-5d8f-4e4f-b7e0-8e0d17e0ef9f</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>5061c17f-cb8f-416f-9e2a-01933a0bc3cd</id>
+      <recordtableid>95f16381-e2ba-49f7-bc4d-72f96d0bd44e</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanCigarettesApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>ee94c135-a59f-495b-bb67-e640e6e10bd2</id>
+      <recordtableid>06595299-f9bd-4ef3-af87-3603c0bba3b3</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_ScanDealaSetPriceMealDeal.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>44e5380d-2593-4dda-8e18-7c8b4b9aef96</id>
+      <recordtableid>e6726edd-646d-40d6-8cf6-95ecfcc0452f</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanLinkDealBogof.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>cd03d8fe-0fd7-4583-be0b-31787b0dd0fb</id>
+      <recordtableid>7591efcb-ec59-4516-bfb7-5c6d3d6fc3e7</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanPricePromotion.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>95523d61-b5c2-4234-9646-c555b15da1a3</id>
+      <recordtableid>4ff17e62-9e81-4ed5-913a-c3828cd9364a</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanReducedBarcode.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>ad41a1b4-44de-4d77-9195-a41235629658</id>
+      <recordtableid>b75c7f84-ecf4-4ccf-802a-bc2ce0beeb32</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanWeightedItem.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>66ffe104-b1a2-4685-a0ca-fafe848e443b</id>
+      <recordtableid>7c20e420-07c5-4ced-a35e-3df01075289d</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalNo.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>6950a660-f902-4ed6-8eff-ffcf70b9854d</id>
+      <recordtableid>a3393eb2-c757-4097-ad32-ac5da4fb541e</recordtableid>
+    </None>
+    <None Include="Recording Modules\ScanRecordings\test_scanWhiskeyApprovalYes.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>663610f9-710e-4029-9d05-2a9257ed752e</id>
+      <recordtableid>38a3288c-92ac-4b91-b0eb-423afd8025ac</recordtableid>
     </None>
     <None Include="SCO_TestRepository.rximg">
       <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
@@ -190,6 +1362,16 @@
       <id>aadf568d-0020-41e8-b83b-97bec5b5dd0f</id>
       <recordtableid>2a1fb419-b45b-4430-b018-567b20285400</recordtableid>
     </None>
+    <None Include="StartLayerTester.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>d2f95657-82a4-482e-9aee-29271dfbcdf3</id>
+      <recordtableid>f9f46806-3e47-4a91-b71f-de30df949e03</recordtableid>
+    </None>
+    <None Include="TestRec.rxrec">
+      <BoundTo>c6efa30b-17e6-40eb-a902-08058e33eb2d</BoundTo>
+      <id>ea9215f9-abfc-47bd-a308-f388a6fa2729</id>
+      <recordtableid>3bd2bed7-d4e7-444f-8c2e-9528680d36be</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SCO_Test.rxtmg">
@@ -204,6 +1386,27 @@
   <ItemGroup>
     <Folder Include="CodeModules">
       <id>34cf98fe-6868-459e-a44c-f1ffdfb046ad</id>
+    </Folder>
+    <Folder Include="Recording Modules">
+      <id>b444dd0f-d582-4689-bf0c-becef6981dde</id>
+    </Folder>
+    <Folder Include="Recording Modules\AssitanceRecordings">
+      <id>4b0f339c-5525-41fe-ac7c-09667abb7160</id>
+    </Folder>
+    <Folder Include="Recording Modules\ReportRecordings">
+      <id>755936ae-0cdb-412c-beff-91005ea09bec</id>
+    </Folder>
+    <Folder Include="Recording Modules\ReceiptRecordings">
+      <id>798a038e-0cdb-422f-8324-830efa73e2e8</id>
+    </Folder>
+    <Folder Include="Recording Modules\ScanRecordings">
+      <id>457415c9-6546-4200-a961-f8dc5703b9ad</id>
+    </Folder>
+    <Folder Include="Recording Modules\PEDRecordings">
+      <id>a2fd1af2-d3d3-4301-aae8-47c7ff74e750</id>
+    </Folder>
+    <Folder Include="Recording Modules\PickListRecordings">
+      <id>ab660aeb-7370-4f45-87ca-604210e9917f</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

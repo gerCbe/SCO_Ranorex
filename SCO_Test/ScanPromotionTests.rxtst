@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuitedoc>
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="NewConnector"
+			id="01729f3d-01a8-47dc-9e43-4e2722652a40"
+			maxrange="11"
+			minrange="11"
+			name="LayertesterScan">
+				<parameters>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter1"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
+			<testmodule
+			id="0755fbdd-4cdc-47cf-a9a4-c42b565e98f3"
+			name="StartLayerTester"
+			ref="f9f46806-3e47-4a91-b71f-de30df949e03"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="0c8ff098-cfde-4cb7-9899-8bbe1efbaea2"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="11c895b4-d717-4336-b3a5-c643f6cda611"
+			name="StartLayerTester"
+			ref="f9f46806-3e47-4a91-b71f-de30df949e03"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1b4e4a00-acef-4402-8626-f093b6d7fb06"
+			name="test_scanBuy3GetOneFree"
+			ref="04124f9d-5d8f-4e4f-b7e0-8e0d17e0ef9f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BarCodeMessage"
+					datasourceid="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+					variableid="ad0c76ba-2b0c-4218-ba00-f365fd8f6951"
+					variablename="BarCodeMessage">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1bffd3e6-0833-472c-bc2d-605f1776b227"
+			name="CloseLayerTester"
+			ref="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3508f9f8-0f51-4ef3-b032-3184277a5f8d"
+			name="StartLayerTester"
+			ref="f9f46806-3e47-4a91-b71f-de30df949e03"
+			type="Recording">
+			</testmodule>
+			<testsuite
+			ExportColumnList="None"
+			ReportTime="RelativeToTestSuiteStartTime"
+			SelectedActions="All"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
+			createindividualreportpdfchecked="False"
+			createsinglereportpdfchecked="True"
+			enableCSVReport="False"
+			enabletracingscreenshots="True"
+			exportAllColummns="True"
+			id="3e937f2f-4d42-44ad-bb06-1ccf408c073d"
+			includeimageschecked="False"
+			includerecordingschecked="False"
+			junitreport="False"
+			junitreportshowerrafterstd="True"
+			name="ScanPromotionTests"
+			overwritefilechecked="False"
+			reportcompress="False"
+			reportdescription=""
+			reportdirectoryname="Reports"
+			reportenabled="True"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
+			</testsuite>
+			<testcase
+			id="41aaee3d-c2c7-4a4f-85e2-84598f9091e9"
+			name="ScanPromotionTests"
+			reportlevel="Info;20">
+			</testcase>
+			<testcase
+			id="5097e48d-aaf9-400d-b512-3895827f7f99"
+			name="test_scanPricePromotion">
+			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="NewConnector"
+			id="53e6b294-9007-464f-a994-e8e61f9acac4"
+			maxrange="8"
+			minrange="8"
+			name="LayertesterScan">
+				<parameters>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter1"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="NewConnector"
+			id="544519d6-91ba-498b-9177-92b1ab7d9e10"
+			maxrange="12"
+			minrange="12"
+			name="LayertesterScan">
+				<parameters>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter1"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
+			<testmodule
+			id="57800116-2928-4e85-b815-ef0fde04b262"
+			name="test_scanBogofDeal"
+			ref="0b989543-df6b-424e-88e6-8d6cecb87f66"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BarCodeMessage"
+					datasourceid="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+					variableid="8f79bcd3-72a0-48bb-b9c7-9528d1564769"
+					variablename="BarCodeMessage">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="5f687cd1-557e-4f70-a33f-3f05147184e7"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="7017efad-4ef2-48a3-bf19-d109071c2b6c"
+			name="test_ScanBogofDeal">
+			</testcase>
+			<testmodule
+			id="75b419f3-4a86-4ed9-b24e-69bcb71e559e"
+			name="test_ScanDealaSetPriceMealDeal"
+			ref="e6726edd-646d-40d6-8cf6-95ecfcc0452f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BarCodeMessage"
+					datasourceid="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+					variableid="4b86c045-d107-4443-a749-32a0d7b0a7b3"
+					variablename="BarCodeMessage">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="796f714f-acd6-4953-b1ca-d45c7ba6eeb4"
+			name="CloseLayerTester"
+			ref="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="NewConnector"
+			id="7a227666-7fc0-4564-a44d-36b65511ab94"
+			maxrange="10"
+			minrange="10"
+			name="LayertesterScan">
+				<parameters>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter1"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
+			<testcase
+			id="7bc310b3-cb9d-4ad6-a3e2-6a3aff62eef6"
+			name="test_scanLinkDealBogof">
+			</testcase>
+			<testcase
+			id="7dc0ef5d-c813-4973-b4a9-b2d893f62b71"
+			name="test_scanBuy3GetOneFree">
+			</testcase>
+			<testmodule
+			id="90af1426-50bc-49ff-913a-9c5efb112754"
+			name="StartLayerTester"
+			ref="f9f46806-3e47-4a91-b71f-de30df949e03"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="917bac76-6d72-4095-901c-46e0f338862d"
+			name="setup">
+			</setup>
+			<setup
+			id="96983c93-73d5-4a84-ac68-ba56f63ee2f1"
+			name="setup">
+			</setup>
+			<teardown
+			id="9f176e91-6b49-4dc7-98f7-5a755a96cccd"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="a1fe998a-1427-4879-aa8d-1b3da4973070"
+			name="test_ScanDeliMealDeal">
+			</testcase>
+			<setup
+			id="af1159bc-36b7-4d6b-82b7-d10e8647441c"
+			name="setup">
+			</setup>
+			<testmodule
+			id="afff521d-5245-4a3f-b076-1f283a682a36"
+			name="CloseLayerTester"
+			ref="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="NewConnector"
+			id="b95d091c-9fa9-40c5-836e-5ac53aee74f8"
+			maxrange="9"
+			minrange="9"
+			name="LayertesterScan">
+				<parameters>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter1"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
+			<testmodule
+			id="bb020944-bbae-4aa0-a255-bc5a8f3e74c8"
+			name="StartLayerTester"
+			ref="f9f46806-3e47-4a91-b71f-de30df949e03"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="c672152f-d156-4dfd-92be-363099d2e994"
+			name="setup">
+			</setup>
+			<testmodule
+			id="c9c77ed4-06b8-4676-828f-401e583e6ad7"
+			name="test_scanPricePromotion"
+			ref="4ff17e62-9e81-4ed5-913a-c3828cd9364a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BarCodeMessage"
+					datasourceid="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+					variableid="7312f11c-5466-478d-a462-4763d0faf7d6"
+					variablename="BarCodeMessage">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="d875e0c3-ed56-4f0c-af9d-73a2f69e35dd"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="d88d4171-0298-4975-a916-0fced6c8cc60"
+			name="CloseLayerTester"
+			ref="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="e1c9b5d9-cb45-4ed3-abcb-88c90e08fa2e"
+			name="setup">
+			</setup>
+			<testmodule
+			id="eee371f5-c627-4add-9884-d8f4777748d3"
+			name="CloseLayerTester"
+			ref="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fed33b0c-d305-4e77-bbce-abe05381b505"
+			name="test_scanLinkDealBogof"
+			ref="7591efcb-ec59-4516-bfb7-5c6d3d6fc3e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BarCodeMessage"
+					datasourceid="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+					variableid="43e9a49b-7df7-4f6c-a8a2-69d17d45a265"
+					variablename="BarCodeMessage">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="ffa70124-923e-4f05-9294-0e9ffadc3005"
+			name="teardown">
+			</teardown>
+		</flatlistofchildren>
+		<childhierarchy>
+			<testsuite
+			id="3e937f2f-4d42-44ad-bb06-1ccf408c073d"
+			name="ScanPromotionTests">
+				<testcase
+				id="41aaee3d-c2c7-4a4f-85e2-84598f9091e9"
+				name="ScanPromotionTests">
+					<testcase
+					id="7017efad-4ef2-48a3-bf19-d109071c2b6c"
+					name="test_ScanBogofDeal">
+						<setup
+						id="e1c9b5d9-cb45-4ed3-abcb-88c90e08fa2e"
+						name="setup">
+						</setup>
+						<testmodule
+						id="90af1426-50bc-49ff-913a-9c5efb112754"
+						name="StartLayerTester">
+						</testmodule>
+						<smartfoldernode
+						id="b95d091c-9fa9-40c5-836e-5ac53aee74f8"
+						name="LayertesterScan">
+							<testmodule
+							id="57800116-2928-4e85-b815-ef0fde04b262"
+							name="test_scanBogofDeal">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="d875e0c3-ed56-4f0c-af9d-73a2f69e35dd"
+						name="teardown">
+							<testmodule
+							id="796f714f-acd6-4953-b1ca-d45c7ba6eeb4"
+							name="CloseLayerTester">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="a1fe998a-1427-4879-aa8d-1b3da4973070"
+					name="test_ScanDeliMealDeal">
+						<setup
+						id="c672152f-d156-4dfd-92be-363099d2e994"
+						name="setup">
+						</setup>
+						<testmodule
+						id="3508f9f8-0f51-4ef3-b032-3184277a5f8d"
+						name="StartLayerTester">
+						</testmodule>
+						<smartfoldernode
+						id="53e6b294-9007-464f-a994-e8e61f9acac4"
+						name="LayertesterScan">
+							<testmodule
+							id="75b419f3-4a86-4ed9-b24e-69bcb71e559e"
+							name="test_ScanDealaSetPriceMealDeal">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="0c8ff098-cfde-4cb7-9899-8bbe1efbaea2"
+						name="teardown">
+							<testmodule
+							id="d88d4171-0298-4975-a916-0fced6c8cc60"
+							name="CloseLayerTester">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="7dc0ef5d-c813-4973-b4a9-b2d893f62b71"
+					name="test_scanBuy3GetOneFree">
+						<setup
+						id="af1159bc-36b7-4d6b-82b7-d10e8647441c"
+						name="setup">
+						</setup>
+						<testmodule
+						id="bb020944-bbae-4aa0-a255-bc5a8f3e74c8"
+						name="StartLayerTester">
+						</testmodule>
+						<smartfoldernode
+						id="7a227666-7fc0-4564-a44d-36b65511ab94"
+						name="LayertesterScan">
+							<testmodule
+							id="1b4e4a00-acef-4402-8626-f093b6d7fb06"
+							name="test_scanBuy3GetOneFree">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="9f176e91-6b49-4dc7-98f7-5a755a96cccd"
+						name="teardown">
+							<testmodule
+							id="afff521d-5245-4a3f-b076-1f283a682a36"
+							name="CloseLayerTester">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="7bc310b3-cb9d-4ad6-a3e2-6a3aff62eef6"
+					name="test_scanLinkDealBogof">
+						<setup
+						id="96983c93-73d5-4a84-ac68-ba56f63ee2f1"
+						name="setup">
+						</setup>
+						<testmodule
+						id="0755fbdd-4cdc-47cf-a9a4-c42b565e98f3"
+						name="StartLayerTester">
+						</testmodule>
+						<smartfoldernode
+						id="01729f3d-01a8-47dc-9e43-4e2722652a40"
+						name="LayertesterScan">
+							<testmodule
+							id="fed33b0c-d305-4e77-bbce-abe05381b505"
+							name="test_scanLinkDealBogof">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="ffa70124-923e-4f05-9294-0e9ffadc3005"
+						name="teardown">
+							<testmodule
+							id="eee371f5-c627-4add-9884-d8f4777748d3"
+							name="CloseLayerTester">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="5097e48d-aaf9-400d-b512-3895827f7f99"
+					name="test_scanPricePromotion">
+						<setup
+						id="917bac76-6d72-4095-901c-46e0f338862d"
+						name="setup">
+						</setup>
+						<testmodule
+						id="11c895b4-d717-4336-b3a5-c643f6cda611"
+						name="StartLayerTester">
+						</testmodule>
+						<smartfoldernode
+						id="544519d6-91ba-498b-9177-92b1ab7d9e10"
+						name="LayertesterScan">
+							<testmodule
+							id="c9c77ed4-06b8-4676-828f-401e583e6ad7"
+							name="test_scanPricePromotion">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="5f687cd1-557e-4f70-a33f-3f05147184e7"
+						name="teardown">
+							<testmodule
+							id="1bffd3e6-0833-472c-bc2d-605f1776b227"
+							name="CloseLayerTester">
+							</testmodule>
+						</teardown>
+					</testcase>
+				</testcase>
+			</testsuite>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+	<datasources>
+		<DataSource
+		id="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+		lastknownrowcount="13"
+		name="NewConnector"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					BarCodeMessage
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						BarCodeMessage
+					</th>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0284940000003&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;1234567899190&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;1210000100832&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5060592003136&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;2095456000009&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0000020817930&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0000000044947&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0000000994834&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0283120000000 &quot; /&gt;
+  &lt;/Layer&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5449000131805 &quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;&#10;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5449000280299&quot; /&gt;
+  &lt;/Layer&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5449000280299&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;&#10;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;7622210818515&quot; /&gt;
+  &lt;/Layer&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;7622210818515&quot; /&gt;
+  &lt;/Layer&gt;
+ &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;7622210818515&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;&#10;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5000112573572&quot; /&gt;
+  &lt;/Layer&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0265550000003&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;&#10;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5011020202942&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+	</datasources>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="01729f3d-01a8-47dc-9e43-4e2722652a40">
+			</testcontainer>
+			<testcontainer
+			id="41aaee3d-c2c7-4a4f-85e2-84598f9091e9">
+			</testcontainer>
+			<testcontainer
+			id="5097e48d-aaf9-400d-b512-3895827f7f99">
+			</testcontainer>
+			<testcontainer
+			id="53e6b294-9007-464f-a994-e8e61f9acac4">
+			</testcontainer>
+			<testcontainer
+			id="544519d6-91ba-498b-9177-92b1ab7d9e10">
+			</testcontainer>
+			<testcontainer
+			id="7017efad-4ef2-48a3-bf19-d109071c2b6c">
+			</testcontainer>
+			<testcontainer
+			id="7a227666-7fc0-4564-a44d-36b65511ab94">
+			</testcontainer>
+			<testcontainer
+			id="7bc310b3-cb9d-4ad6-a3e2-6a3aff62eef6">
+			</testcontainer>
+			<testcontainer
+			id="7dc0ef5d-c813-4973-b4a9-b2d893f62b71">
+			</testcontainer>
+			<testcontainer
+			id="a1fe998a-1427-4879-aa8d-1b3da4973070">
+			</testcontainer>
+			<testcontainer
+			id="b95d091c-9fa9-40c5-836e-5ac53aee74f8">
+			</testcontainer>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+	</references>
+</testsuitedoc>

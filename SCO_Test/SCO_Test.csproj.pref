@@ -1,18 +1,22 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="CodeModules\MainTestModule.cs" />
+    <Element value="Recording Modules\PEDRecordings\test_pedScan02Barcode.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="CodeModules\MainTestModule.cs" />
-    <Element value="CodeModules\genCode.cs" />
-    <Element value="SCO_Test.rxtst" />
-    <Element value="SCO_TestRepository.rxrep" />
-    <Element value="StartAUT.rxrec" />
+    <Element value="ScanTests.rxtst" />
+    <Element value="ReceiptTests.rxtst" />
+    <Element value="ReportTests.rxtst" />
+    <Element value="PickListTests.rxtst" />
+    <Element value="PEDTests.rxtst" />
+    <Element value="ScanPromotionTests.rxtst" />
+    <Element value="Recording Modules\PEDRecordings\test_pedScan02Barcode.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
+      <fileNames value="" />
       <runOnBuild value="False" />
     </Properties>
+    <Array name="recentusercodeselections" />
   </Properties>
 </Properties>

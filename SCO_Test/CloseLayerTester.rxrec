@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c6365972-d0e3-4bbf-8736-2cfbd6be1590"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseLayerTester"
+	namespace="SCO_Test">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1944bd58-85de-4ce1-a9b9-8d599225abf8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0c56320f-2a1d-4418-8334-c09009325a5c"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='fmMain']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="52db32c6-ded9-4a79-9069-8edce4e61533"
+	name="SCO_TestRepository"
+	relativepath="SCO_TestRepository.rxrep">
+		<codegen
+		classname="SCO_TestRepository"
+		namespace="SCO_Test">
+		</codegen>
+		<rootfolder
+		id="fc1d2383-1ec3-4156-b397-7cdcc4b2ac47"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseLayerTester.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -31,10 +31,10 @@ rxversion="11.0">
 		True
 	</recorder.useDefaultLogging>
 	<recorder.enablecoordinates>
-		True
+		False
 	</recorder.enablecoordinates>
 	<recorder.coordinatemode>
-		Pixel
+		None
 	</recorder.coordinatemode>
 	<recorder.UseConfiguredTimingsOnRecord>
 		True
@@ -457,7 +457,7 @@ rxversion="11.0">
 		True
 	</plugins.win32.EnableDynamicMsaa>
 	<plugins.win32.ProcessWhitelist>
-		ApplicationFrameHost;FutaTill;HWL;LaunchPadNet;SCO;SCOTAppU;ShellExperienceHost;SSCOUI;wineposV4;
+		ApplicationFrameHost;FutaTill;HWL;LaunchPadNet;LayerTester;SCO;SCOTAppU;ShellExperienceHost;SSCOUI;wineposV4;
 	</plugins.win32.ProcessWhitelist>
 	<plugins.win32.ProcessBlacklist>
 	</plugins.win32.ProcessBlacklist>

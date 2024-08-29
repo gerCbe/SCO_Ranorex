@@ -9,8 +9,13 @@
       <string>{2FA7A17F-FE4B-4905-B74D-EC2DCD70AA00}</string>
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>34cf98fe-6868-459e-a44c-f1ffdfb046ad</string>
+      <string>b444dd0f-d582-4689-bf0c-becef6981dde</string>
+      <string>a2fd1af2-d3d3-4301-aae8-47c7ff74e750</string>
+      <string>ab660aeb-7370-4f45-87ca-604210e9917f</string>
+      <string>457415c9-6546-4200-a961-f8dc5703b9ad</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SCO_Test[SCO_Test[]]]&#xD;&#xA;Solution SCO_Test\SCO_Test\CodeModules&#xD;&#xA;Solution SCO_Test" />
+  <ProjectBrowserState value="[Solution SCO_Test[SCO_Test[Recording Modules[]]]]&#xD;&#xA;Solution SCO_Test\SCO_Test\Recording Modules\PEDRecordings&#xD;&#xA;Solution SCO_Test\SCO_Test\Recording Modules\PEDRecordings" />
   <StartupProject value="{2FA7A17F-FE4B-4905-B74D-EC2DCD70AA00}" />
 </Properties>

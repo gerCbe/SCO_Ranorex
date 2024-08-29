@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuitedoc>
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testsuite
+			ExportColumnList="None"
+			ReportTime="RelativeToTestSuiteStartTime"
+			SelectedActions="All"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
+			createindividualreportpdfchecked="False"
+			createsinglereportpdfchecked="True"
+			enableCSVReport="False"
+			enabletracingscreenshots="True"
+			exportAllColummns="True"
+			id="11ada6e5-9e32-494b-98ba-0f428334ecc5"
+			includeimageschecked="False"
+			includerecordingschecked="False"
+			junitreport="False"
+			junitreportshowerrafterstd="True"
+			name="ReportTests"
+			overwritefilechecked="False"
+			reportcompress="False"
+			reportdescription=""
+			reportdirectoryname="Reports"
+			reportenabled="True"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
+			</testsuite>
+			<testmodule
+			id="1a36d0d5-2e47-4ee6-ae19-ac4defc65a09"
+			name="StartAUT"
+			ref="2a1fb419-b45b-4430-b018-567b20285400"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="2e2f4570-e800-439a-bb4f-614e5cfb5158"
+			name="setup">
+			</setup>
+			<teardown
+			id="3a8a03bc-d382-40b6-aa43-4ab7e2f3c3a2"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="6ddc327f-1e9f-49fd-b53a-9b24957922fc"
+			name="ReportTests"
+			reportlevel="Info;20">
+			</testcase>
+			<testmodule
+			id="6fb6210f-0f03-4092-8294-61df19fb9f56"
+			name="CloseAUT"
+			ref="2fe50939-04c4-40c7-bc3d-0c6e933fa1ac"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="718532ad-33d2-4a2d-b3b7-d49d8881b22b"
+			name="test_runTodaySummaryReportByCashier"
+			retrycount="1">
+			</testcase>
+			<testmodule
+			id="7df7241f-b181-4d33-ac62-241a98b4d523"
+			name="StartAUT"
+			ref="2a1fb419-b45b-4430-b018-567b20285400"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8e9c55f1-4a00-4297-a4da-6597122f7ebd"
+			name="test_runTodaySalesReport"
+			ref="9e40a2e3-0a4d-4fc3-b1ed-8c3d6bbfe979"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8ea7357d-95a6-46ba-b370-602aa95668c1"
+			name="Test_runTodaySummaryReportByCashier"
+			ref="d4c2059e-457d-4091-8e49-39ceee360888"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="9446876a-f532-423e-89cc-de90b4df6239"
+			name="test_runTodaySalesReport"
+			retrycount="1">
+			</testcase>
+			<testmodule
+			id="97bd7a99-9eec-4427-8f13-3034a8dfb082"
+			name="CloseAUT"
+			ref="2fe50939-04c4-40c7-bc3d-0c6e933fa1ac"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="b88debec-6c46-43b2-b4e5-48494d99d5fe"
+			name="teardown">
+			</teardown>
+			<setup
+			id="c5a7bb97-44a2-4d14-a280-a1a621256d30"
+			name="setup">
+			</setup>
+		</flatlistofchildren>
+		<childhierarchy>
+			<testsuite
+			id="11ada6e5-9e32-494b-98ba-0f428334ecc5"
+			name="ReportTests">
+				<testcase
+				id="6ddc327f-1e9f-49fd-b53a-9b24957922fc"
+				name="ReportTests">
+					<testcase
+					id="9446876a-f532-423e-89cc-de90b4df6239"
+					name="test_runTodaySalesReport">
+						<setup
+						id="c5a7bb97-44a2-4d14-a280-a1a621256d30"
+						name="setup">
+							<testmodule
+							id="1a36d0d5-2e47-4ee6-ae19-ac4defc65a09"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="8e9c55f1-4a00-4297-a4da-6597122f7ebd"
+						name="test_runTodaySalesReport">
+						</testmodule>
+						<teardown
+						id="3a8a03bc-d382-40b6-aa43-4ab7e2f3c3a2"
+						name="teardown">
+							<testmodule
+							id="6fb6210f-0f03-4092-8294-61df19fb9f56"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="718532ad-33d2-4a2d-b3b7-d49d8881b22b"
+					name="test_runTodaySummaryReportByCashier">
+						<setup
+						id="2e2f4570-e800-439a-bb4f-614e5cfb5158"
+						name="setup">
+							<testmodule
+							id="7df7241f-b181-4d33-ac62-241a98b4d523"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="8ea7357d-95a6-46ba-b370-602aa95668c1"
+						name="Test_runTodaySummaryReportByCashier">
+						</testmodule>
+						<teardown
+						id="b88debec-6c46-43b2-b4e5-48494d99d5fe"
+						name="teardown">
+							<testmodule
+							id="97bd7a99-9eec-4427-8f13-3034a8dfb082"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+				</testcase>
+			</testsuite>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+	<datasources>
+		<DataSource
+		id="0f80faf6-bad8-44d7-a5c5-d3b7f5421c2e"
+		lastknownrowcount="7"
+		name="NewConnector"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					BarCodeMessage
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						BarCodeMessage
+					</th>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0284940000003&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;1234567899190&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;1210000100832&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;5060592003136&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;2095456000009&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0000020817930&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&lt;Bulk&gt;
+  &lt;Layer Name=&quot;CORE&quot;&gt;
+    &lt;SourceLayer Name=&quot;HWL&quot; /&gt;
+    &lt;SourceDevice Name=&quot;RS232Scanner&quot; /&gt;
+    &lt;Message Name=&quot;Barcode&quot; Barcode=&quot;0000000044947&quot; /&gt;
+  &lt;/Layer&gt;
+&lt;/Bulk&gt;
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+	</datasources>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="6ddc327f-1e9f-49fd-b53a-9b24957922fc">
+			</testcontainer>
+			<testcontainer
+			id="718532ad-33d2-4a2d-b3b7-d49d8881b22b">
+			</testcontainer>
+			<testcontainer
+			id="9446876a-f532-423e-89cc-de90b4df6239">
+			</testcontainer>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+	</references>
+</testsuitedoc>

@@ -35,7 +35,7 @@
 			</testsuite>
 			<testcase
 			id="af3318e9-cf50-468a-94ce-f2f79750e406"
-			name="TestCase">
+			name="StoreLogin">
 			</testcase>
 			<testcase
 			id="d8505d45-a84f-4939-ac16-bfcfd1f59564"
@@ -49,12 +49,6 @@
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="e428436c-a15f-4742-96d0-94c6a80a4e4f"
-			name="MainTestModule"
-			ref="3a1ecf46-8e59-4066-934d-20ca4b887da0"
-			type="UserCode">
-			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -65,11 +59,7 @@
 				name="SCO_Test">
 					<testcase
 					id="af3318e9-cf50-468a-94ce-f2f79750e406"
-					name="TestCase">
-						<testmodule
-						id="e428436c-a15f-4742-96d0-94c6a80a4e4f"
-						name="MainTestModule">
-						</testmodule>
+					name="StoreLogin">
 					</testcase>
 				</testcase>
 			</testsuite>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3bd2bed7-d4e7-444f-8c2e-9528680d36be"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TestRec"
+	namespace="SCO_Test">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="52db32c6-ded9-4a79-9069-8edce4e61533"
+	name="SCO_TestRepository"
+	relativepath="SCO_TestRepository.rxrep">
+		<codegen
+		classname="SCO_TestRepository"
+		namespace="SCO_Test">
+		</codegen>
+		<rootfolder
+		id="fc1d2383-1ec3-4156-b397-7cdcc4b2ac47"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TestRec.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

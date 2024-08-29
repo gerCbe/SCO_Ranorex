@@ -1,0 +1,37 @@
+[
+  {
+    "Enabled": "False",
+    "TestSuite": "SCO_Test",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "ScanTests",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "ReceiptTests",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "ScanPromotionTests",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "PickListTests",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "ReportTests",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "False",
+    "TestSuite": "PEDTests",
+    "RunConfig": "TestRun"
+  }
+]
